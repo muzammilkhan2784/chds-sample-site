@@ -216,3 +216,10 @@ table.alumni th { color: var(--violet); border-bottom: 2px solid var(--violet); 
 .flyer-inline { margin: 1em 0 1.5em; max-width: 232px; }
 .flyer-inline img { width: 100%; border: 1px solid var(--border); display: block; }
 .flyer-inline figcaption { font-size: .9rem; margin-top: 6px; }
+
+/* Footer and scrolled-header logo: white version, sized so both NYU torch boxes match */
+.site-footer .logos img.center { height: 56px; width: auto; margin: -2px 0 24px; }
+.site-footer .logos img.school { height: 48px; margin-bottom: 0; }
+.brand .on-dark { width: 276px; margin: 0 6px 0 8px; }
+@media (max-width: 1000px) { .brand .on-dark { width: 219px; margin: 0 5px 0 6px; } }
+@media (max-width: 480px) { .site-footer .logos img.center { height: 42px; margin-bottom: 18px; } .site-footer .logos img.school { height: 36px; } }
