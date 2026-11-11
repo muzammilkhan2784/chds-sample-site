@@ -201,3 +201,18 @@ h2.c { text-align: center; }
 
 @media (max-width: 1000px) { .tablist { flex-direction: column; border-bottom: 0; } .tablist button { margin-bottom: 0; border-color: var(--border); border-bottom: 0; padding: 14px 16px; } .tablist button:last-child { border-bottom: 1px solid var(--border); } }
 @media (max-width: 1000px) { .tablist button[aria-selected="true"] { background: var(--light-violet, #eee6f3); border-left: 4px solid var(--violet); } }
+
+/* Nov 11 */
+.brand img { width: 290px; height: auto; display: block; }
+.site-footer .logos img { max-width: 100%; }
+.news-card .source { font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .85rem; color: #1d1d1d; min-height: 44px; display: flex; align-items: center; margin: 0 0 12px; }
+.project .ph { aspect-ratio: 3 / 2; border-radius: 12px; border: 2px dashed #b99bcf; background: #f4eef8; color: #57068c; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+.people-grid.three { grid-template-columns: repeat(3, minmax(180px, 300px)); justify-content: center; }
+@media (max-width: 800px) { .people-grid.three { grid-template-columns: 1fr; } }
+.person .avatar { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 12px; border: 1px solid var(--border); background: #f4eef8; color: #57068c; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; font-weight: 600; }
+table.alumni { border-collapse: collapse; width: 100%; max-width: 760px; margin: 0 auto; }
+table.alumni th, table.alumni td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+table.alumni th { color: var(--violet); border-bottom: 2px solid var(--violet); }
+.flyer-inline { margin: 1em 0 1.5em; max-width: 232px; }
+.flyer-inline img { width: 100%; border: 1px solid var(--border); display: block; }
+.flyer-inline figcaption { font-size: .9rem; margin-top: 6px; }
