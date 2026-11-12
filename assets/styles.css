@@ -223,3 +223,8 @@ table.alumni th { color: var(--violet); border-bottom: 2px solid var(--violet); 
 .brand .on-dark { width: 276px; margin: 0 6px 0 8px; }
 @media (max-width: 1000px) { .brand .on-dark { width: 219px; margin: 0 5px 0 6px; } }
 @media (max-width: 480px) { .site-footer .logos img.center { height: 42px; margin-bottom: 18px; } .site-footer .logos img.school { height: 36px; } }
+
+/* Student tabs: text uses the full width of the tabs and is a little bigger; flyers centered and larger */
+.tabpanel.prose { max-width: none; font-size: 1.08rem; }
+.flyer-inline { margin: 1.6em auto 2.2em; max-width: 440px; text-align: center; }
+.flyer-inline figcaption { font-size: .95rem; margin-top: 10px; text-align: center; }
