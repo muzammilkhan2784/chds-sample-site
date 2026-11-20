@@ -120,3 +120,11 @@ a[style*="1ea5af" i] {
   background-color: #ffffff !important;
   border-color: #ffffff !important;
 }
+
+/* 5. Small CHDS dots icon (decorative, on page title bands and above the footer) was green -> NYU violet.
+   The image is moved off screen and an exact violet copy of its shape is drawn in its place. */
+img[src*="/2022/07/cropped-icon"], img[data-src*="/2022/07/cropped-icon"],
+img[src*="/2022/07/icon.png"], img[data-src*="/2022/07/icon.png"] {
+  transform: translateX(-10000px);
+  filter: drop-shadow(10000px 0 0 #57068c);
+}
