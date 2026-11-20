@@ -1,0 +1,285 @@
+/* ===== Team & Partners page (page-id-481): page body - people grids, Visitors, Affiliates, alumni table, organisation cards ===== */
+
+/* A. Section bands: same white / light-violet alternation and spacing as the sample */
+body.page-id-481 :is(.elementor-element-322efe5, .elementor-element-909e9ba, .elementor-element-2354e7b) {
+  padding: clamp(40px, 6vw, 80px) 20px 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-c947755) {
+  padding: 0 20px clamp(40px, 6vw, 80px) !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 .elementor-element-b86f7ca {
+  padding: 0 20px 36px !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-74a501a, .elementor-element-db7cac6) {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+/* PhD row is followed by the MS row: normal row gap between them */
+body.page-id-481 .elementor-element-74a501a:has(+ .elementor-element-474b090) { padding-bottom: 36px !important; }
+body.page-id-481 :is(.elementor-element-2976269, .elementor-element-b8e71ac, .elementor-element-c0c24ff) {
+  padding: clamp(40px, 6vw, 80px) 20px calc(clamp(40px, 6vw, 80px) - 16px) !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+/* light violet bands: Core Team rows, Alumni, Research and Community Collaborations */
+body.page-id-481 section:is(.elementor-element-74a501a, .elementor-element-474b090, .elementor-element-db7cac6, .elementor-element-b8e71ac) {
+  background-color: #eee6f3 !important; background-image: none !important;
+}
+/* white bands: Director, Visitors, Affiliates, Across NYU (overrides the earlier brand rule that tinted Across NYU), Funding */
+body.page-id-481 section:is(.elementor-element-322efe5, .elementor-element-4c6d4c4, .elementor-element-909e9ba, .elementor-element-4a0c16e, .elementor-element-2354e7b, .elementor-element-b86f7ca, .elementor-element-c947755, .elementor-element-2976269, .elementor-element-c0c24ff) {
+  background-color: #ffffff !important; background-image: none !important;
+}
+/* content width 1120px, as on the sample */
+body.page-id-481 :is(.elementor-element-322efe5, .elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-909e9ba, .elementor-element-4a0c16e, .elementor-element-2354e7b, .elementor-element-b86f7ca, .elementor-element-c947755, .elementor-element-db7cac6, .elementor-element-2976269, .elementor-element-b8e71ac, .elementor-element-c0c24ff) > .elementor-container {
+  max-width: 1120px !important;
+}
+body.page-id-481 :is(.elementor-element-322efe5, .elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-909e9ba, .elementor-element-4a0c16e, .elementor-element-2354e7b, .elementor-element-b86f7ca, .elementor-element-c947755, .elementor-element-db7cac6, .elementor-element-2976269, .elementor-element-b8e71ac, .elementor-element-c0c24ff) > .elementor-container > .elementor-column > .elementor-widget-wrap {
+  padding: 0 !important; margin: 0 !important;
+}
+
+/* A2. Optional "Core Team" heading section. Only takes effect once a section with CSS ID chds-core-team-heading is added in Elementor (see editor steps); harmless until then */
+body.page-id-481 #chds-core-team-heading {
+  background-color: #eee6f3 !important; background-image: none !important;
+  padding: clamp(40px, 6vw, 80px) 20px 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 #chds-core-team-heading > .elementor-container { max-width: 1120px !important; }
+body.page-id-481 #chds-core-team-heading > .elementor-container > .elementor-column > .elementor-widget-wrap { padding: 0 !important; margin: 0 !important; }
+body.page-id-481 #chds-core-team-heading + .elementor-element-74a501a { padding-top: 0 !important; }
+
+/* B. Section headings (sample h2): Team/Director, Visitors, Affiliates, Alumni, Across NYU, Collaborations, Funding */
+body.page-id-481 :is(.elementor-element-7814392, .elementor-element-1f9b1c7, .elementor-element-da729e1, .elementor-element-a4aa113, .elementor-element-0d91d9d, .elementor-element-1634fa7, .elementor-element-4288505) {
+  margin-bottom: 0 !important; text-align: center !important;
+}
+body.page-id-481 :is(.elementor-element-7814392, .elementor-element-1f9b1c7, .elementor-element-da729e1, .elementor-element-a4aa113, .elementor-element-0d91d9d, .elementor-element-1634fa7, .elementor-element-4288505) > .elementor-widget-container {
+  margin: 0 !important; padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7814392, .elementor-element-1f9b1c7, .elementor-element-da729e1, .elementor-element-a4aa113, .elementor-element-0d91d9d, .elementor-element-1634fa7) .elementor-heading-title,
+body.page-id-481 #chds-core-team-heading .elementor-heading-title,
+body.page-id-481 .elementor-element-4288505 :is(h2, h3, h4) {
+  font-size: clamp(27.2px, 3vw, 36.8px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  color: #57068c !important;
+  text-align: center !important;
+  text-transform: none !important;
+  margin: 0 0 0.5em !important;
+  padding: 0 !important;
+}
+
+/* C. People grids (sample "people-grid" / "person"): Director, PhD, MS, Visitors, Affiliates rows */
+body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 36px 28px !important;
+}
+body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container > .elementor-column {
+  width: auto !important;
+  flex: 0 1 300px !important;
+  max-width: 300px !important;
+  min-width: 0 !important;
+}
+body.page-id-481 .elementor-481 .elementor-widget-uael-team-member { margin-bottom: 0 !important; }
+body.page-id-481 .elementor-481 .elementor-widget-uael-team-member > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-481 .uael-team-member,
+body.page-id-481 .elementor-481 .uael-team-member-content { text-align: center !important; }
+/* photo: 150px circle with a thin grey ring */
+body.page-id-481 .elementor-481 .uael-team-member-image { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-481 .uael-team-member-image img {
+  width: 150px !important;
+  height: 150px !important;
+  max-width: 100% !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 1px solid #d6d6d6 !important;
+  display: block !important;
+  margin: 0 auto 12px !important;
+  box-shadow: none !important;
+}
+/* name */
+body.page-id-481 .elementor-481 .uael-team-member-name,
+body.page-id-481 .elementor-481 .uael-team-member-designation,
+body.page-id-481 .elementor-481 .uael-team-member-desc { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-481 .uael-team-name {
+  font-size: 18.4px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #1d1d1d !important;
+  margin: 0 0 0.15em !important;
+  padding: 0 !important;
+}
+/* lines under the name */
+body.page-id-481 .elementor-481 .uael-team-desig,
+body.page-id-481 .elementor-481 .uael-team-desc {
+  font-size: 15.2px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #404040 !important;
+  margin: 0 0 0.2em !important;
+  padding: 0 !important;
+}
+/* role line in semibold (sample ".role"): students and visitors now; the two directors once "Director" / "Associate Director" is moved out of the name field */
+body.page-id-481 :is(.elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e) .uael-team-desig,
+body.page-id-481 .elementor-element-4c6d4c4 .uael-team-member-content:not(:has(.uael-team-name br)) .uael-team-desig {
+  font-weight: 600 !important;
+}
+/* links inside a person card: violet, underlined */
+body.page-id-481 .elementor-481 :is(.uael-team-desig, .uael-team-desc) a { color: #57068c !important; text-decoration: underline !important; text-underline-offset: 2px; overflow-wrap: anywhere; }
+body.page-id-481 .elementor-481 :is(.uael-team-desig, .uael-team-desc) a:visited { color: #3b0a63 !important; }
+body.page-id-481 .elementor-481 :is(.uael-team-desig, .uael-team-desc) a:hover { color: #330662 !important; }
+
+/* D. Alumni table (sample "table.alumni"; keeps the live 3 columns and 12 rows) */
+body.page-id-481 .elementor-element-1587463 { margin-bottom: 0 !important; }
+body.page-id-481 .chds-alumni-wrap { max-width: 760px !important; margin: 0 auto !important; }
+body.page-id-481 table.chds-alumni {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  border: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+}
+body.page-id-481 table.chds-alumni th,
+body.page-id-481 table.chds-alumni td {
+  text-align: left !important;
+  padding: 10px 12px !important;
+  border: 0 !important;
+  border-bottom: 1px solid #d6d6d6 !important;
+  background: transparent !important;
+  vertical-align: middle !important;
+}
+body.page-id-481 table.chds-alumni thead th {
+  color: #57068c !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #57068c !important;
+}
+body.page-id-481 table.chds-alumni tbody tr,
+body.page-id-481 table.chds-alumni tbody tr:nth-child(even) { background: transparent !important; }
+
+/* E. Intro paragraph above "Across NYU" (sample ".intro") */
+body.page-id-481 .elementor-element-935af8f { margin-bottom: 0 !important; }
+body.page-id-481 .elementor-element-935af8f > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-element-935af8f p {
+  font-size: 17.6px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: center !important;
+  max-width: 70ch !important;
+  margin: 0 auto 36px !important;
+}
+
+/* F. Organisation cards (sample ".orgs" / ".org"): Across NYU, Collaborations, Funding and Support */
+/* the inner rows dissolve so all cards in a group flow together and centre (Funding becomes 4 + 4 + 3 on desktop) */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6),
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) > .elementor-container {
+  display: contents !important;
+}
+body.page-id-481 :is(.elementor-element-82c7484, .elementor-element-5c740fc, .elementor-element-eb47cc8) > .elementor-widget-wrap {
+  justify-content: center !important;
+  align-items: stretch !important;
+}
+/* empty spacer columns in the second Funding row */
+body.page-id-481 :is(.elementor-element-89dce0d, .elementor-element-8709424) { display: none !important; }
+/* one card */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) > .elementor-container > .elementor-column {
+  width: 250px !important;
+  max-width: calc(100% - 16px) !important;
+  flex: 0 0 auto !important;
+  margin: 0 8px 16px !important;
+  padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) > .elementor-container > .elementor-column > .elementor-widget-wrap {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 20px 16px !important;
+  margin: 0 !important;
+  min-height: 150px !important;
+  align-content: flex-start !important;
+  justify-content: center !important;
+}
+/* logo box 190 x 76, logo fitted inside */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image {
+  width: 100% !important;
+  margin: 0 0 12px !important;
+  text-align: center !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image > .elementor-widget-container {
+  margin: 0 !important; padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image a {
+  display: block !important;
+  width: 190px !important;
+  max-width: 100% !important;
+  height: 76px !important;
+  margin: 0 auto !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image img {
+  width: 190px !important;
+  max-width: 100% !important;
+  height: 76px !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+/* organisation name: semibold violet underlined link */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor {
+  width: 100% !important;
+  margin: 0 !important;
+  text-align: center !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor > .elementor-widget-container {
+  margin: 0 !important; padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor p {
+  margin: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor a {
+  color: #57068c !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor a:visited { color: #3b0a63 !important; }
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor a:hover { color: #330662 !important; }
+
+/* G. Small screens: people in one centred column at 800px and below, as on the sample */
+@media (max-width: 800px) {
+  body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+  }
+  body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container > .elementor-column {
+    width: 100% !important;
+    flex: 0 0 auto !important;
+  }
+}
+@media (max-width: 600px) {
+  /* alumni table has 3 columns on the live site, so it is tightened slightly on small phones */
+  body.page-id-481 table.chds-alumni { font-size: 15px !important; }
+  body.page-id-481 table.chds-alumni th,
+  body.page-id-481 table.chds-alumni td { padding: 10px 8px !important; }
+}

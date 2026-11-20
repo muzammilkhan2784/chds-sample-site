@@ -1,0 +1,277 @@
+/* ===== Student Opportunities page (post 2466): page head with photo, tabs, tab panels, flyers =====
+   Every rule starts with body.postid-2466, so no other page, the header or the footer is affected. */
+
+/* A. Page head: light violet band, photo left (rounded), title right */
+body.postid-2466 .elementor-element-58e1d2e {
+  background-color: #eee6f3 !important;
+  background-image: none !important;
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+}
+body.postid-2466 .elementor-element-58e1d2e > .elementor-container {
+  max-width: 1120px !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 40px !important;
+}
+body.postid-2466 .elementor-element-8182be4 { width: calc((100% - 40px) * 0.5122) !important; }
+body.postid-2466 .elementor-element-9e88383 { width: calc((100% - 40px) * 0.4878) !important; }
+body.postid-2466 .elementor-element-8182be4 > .elementor-widget-wrap,
+body.postid-2466 .elementor-element-9e88383 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.postid-2466 .elementor-element-a615a59,
+body.postid-2466 .elementor-element-3254e27,
+body.postid-2466 .elementor-element-a615a59 > .elementor-widget-container,
+body.postid-2466 .elementor-element-3254e27 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.postid-2466 .elementor-element-a615a59 img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 12px !important;
+}
+body.postid-2466 .elementor-element-3254e27 .elementor-heading-title {
+  font-size: clamp(32px, 4vw, 48px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: #57068c !important;
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+/* B. Body section: white, same 1120px width and spacing as the sample, no extra inner padding */
+body.postid-2466 .elementor-element-135e8cb {
+  background-color: #ffffff !important;
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+}
+body.postid-2466 .elementor-element-135e8cb > .elementor-container { max-width: 1120px !important; }
+body.postid-2466 .elementor-element-36fd8c5 { padding: 0 !important; margin: 0 !important; }
+body.postid-2466 .elementor-element-36fd8c5 > .elementor-container { max-width: none !important; }
+body.postid-2466 .elementor-element-61485e3 > .elementor-widget-wrap,
+body.postid-2466 .elementor-element-aba64ad > .elementor-widget-wrap,
+body.postid-2466 .elementor-element-281b168 > .elementor-widget-container,
+body.postid-2466 .elementor-element-4754a71 > .elementor-widget-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* C. Tabs: remove the Elementor box and lines, then draw the sample ones */
+body.postid-2466 .elementor-element-4754a71 .elementor-tabs-content-wrapper,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content {
+  border: 0 !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title::before,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title::after {
+  display: none !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title {
+  color: #57068c !important;
+  font-size: 16.8px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-align: left !important;
+  white-space: normal !important;
+  cursor: pointer !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title:hover { text-decoration: underline !important; }
+
+/* Desktop and tablet (Elementor shows the row of tab titles from 768px up) */
+@media (min-width: 768px) {
+  body.postid-2466 .elementor-element-4754a71 .elementor-tabs-wrapper {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0 !important;
+    overflow: visible !important;
+    border-bottom: 1px solid #d6d6d6 !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title {
+    display: block !important;
+    flex: 1 1 auto !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-bottom: 0 !important;
+    margin: 0 0 -1px 0 !important;
+    padding: 22px 26px !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title[aria-selected="true"] {
+    background: #ffffff !important;
+    border-color: #d6d6d6 !important;
+  }
+}
+/* As on the sample below 1000px: tabs become a stacked list, current tab tinted with a violet edge */
+@media (min-width: 768px) and (max-width: 1000px) {
+  body.postid-2466 .elementor-element-4754a71 .elementor-tabs-wrapper {
+    flex-direction: column !important;
+    border-bottom: 0 !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title {
+    border: 1px solid #d6d6d6 !important;
+    margin: -1px 0 0 0 !important;
+    padding: 14px 16px !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title[aria-selected="true"] {
+    background: #eee6f3 !important;
+    border-left: 4px solid #57068c !important;
+  }
+}
+/* Phones: Elementor uses its second set of titles; list all six first, then the open panel underneath */
+@media (max-width: 767px) {
+  body.postid-2466 .elementor-element-4754a71 .elementor-tabs-content-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-mobile-title {
+    order: 1;
+    background: transparent !important;
+    border: 1px solid #d6d6d6 !important;
+    margin: -1px 0 0 0 !important;
+    padding: 14px 16px !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-mobile-title[aria-selected="true"] {
+    background: #eee6f3 !important;
+    border-left: 4px solid #57068c !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-content { order: 2; }
+}
+
+/* D. Tab panel text: full width, 17.28px (sample 1.08rem), grey #404040 */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content {
+  padding: 28px 0 0 0 !important;
+  max-width: none !important;
+  color: #404040 !important;
+  font-size: 17.28px !important;
+  line-height: 1.65 !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content li,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content div {
+  font-size: 17.28px !important;
+  line-height: 1.65 !important;
+  font-style: normal !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content div[dir] { color: #404040 !important; }
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content span { font-size: inherit !important; }
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p { margin: 0 0 1em 0 !important; }
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content ul {
+  margin: 0 0 1em 0 !important;
+  padding-left: 1.2em !important;
+}
+
+/* E. Section headings inside the panels (sample: 24px, semi-bold, violet).
+      h2 = real headings, once the editor steps are done; h6 = how the GenAI tab is built today. */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content h2,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content h6 {
+  display: block !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 1.6em 0 0.5em 0 !important;
+  padding: 0 !important;
+}
+/* E2. STOPGAP for the first two tabs, where headings are just a bold line today.
+       Delete this E2 block once those lines are real Heading 2 (editor steps). */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > b:only-child,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > strong:only-child,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > span + strong:last-child {
+  display: block !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 1.6em 0 -0.2em 0 !important;
+}
+/* the stray empty bold line-break after the Internships paragraph */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > strong:has(> br:only-child) { display: none !important; }
+/* the stray blank space sitting in front of the "Internships" bold line */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > span:first-child:has(+ strong:last-child) { display: none !important; }
+
+/* F. Flyers placed inside the text: centred, up to 440px wide, thin grey border */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > a > img,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > img {
+  display: block !important;
+  max-width: min(440px, 100%) !important;
+  height: auto !important;
+  margin: 1.6em auto 1.2em auto !important;
+  border: 1px solid #d6d6d6 !important;
+}
+/* Flyer with a caption (WordPress adds the wp-caption classes once a caption is typed, see editor steps) */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content .wp-caption {
+  width: auto !important;
+  max-width: min(440px, 100%) !important;
+  margin: 1.6em auto 2.2em auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  text-align: center !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content .wp-caption img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: 1px solid #d6d6d6 !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content .wp-caption-text {
+  font-size: 15.2px !important;
+  line-height: 1.65 !important;
+  margin: 10px 0 0 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  color: #404040 !important;
+}
+
+/* G. Flyers tab (6th tab): a centred row of 232px flyers, 24px apart */
+body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p {
+  text-align: center !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  margin: 0 auto !important;
+}
+body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > img,
+body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > a > img {
+  display: inline-block !important;
+  vertical-align: top !important;
+  width: min(232px, calc(25% - 24px)) !important;
+  max-width: none !important;
+  height: auto !important;
+  margin: 0 12px 24px 12px !important;
+  border: 1px solid #d6d6d6 !important;
+}
+@media (max-width: 1000px) {
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p { max-width: 520px !important; }
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > img,
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > a > img {
+    width: min(232px, calc(50% - 24px)) !important;
+  }
+}
+@media (max-width: 520px) {
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > img,
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > a > img {
+    display: block !important;
+    width: min(232px, 100%) !important;
+    margin: 0 auto 24px auto !important;
+  }
+}
+
+/* H. Phones and small tablets (sample: below 800px the photo sits above the title) */
+@media (max-width: 800px) {
+  body.postid-2466 .elementor-element-58e1d2e > .elementor-container { flex-wrap: wrap !important; }
+  body.postid-2466 .elementor-element-8182be4,
+  body.postid-2466 .elementor-element-9e88383 { width: 100% !important; }
+}

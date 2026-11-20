@@ -1,0 +1,232 @@
+/* ===== Our Work page (page-id-836): filter buttons and project rows, matched to the sample ===== */
+
+/* Section spacing and content width (sample: .section + .wrap = 1120px wide, 20px side gutter, white) */
+body.page-id-836 section.elementor-element-7d4fa72a {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+body.page-id-836 section.elementor-element-7d4fa72a > .elementor-container {
+  max-width: 1120px !important;
+}
+body.page-id-836 section.elementor-element-19c58f2f {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-836 section.elementor-element-19c58f2f > .elementor-container {
+  max-width: 100% !important;
+}
+body.page-id-836 .elementor-element-3a576a29 > .elementor-widget-wrap,
+body.page-id-836 .elementor-element-5973e9e > .elementor-widget-wrap {
+  padding: 0 !important;
+}
+
+/* Filter row (sample .filters): plain text buttons, centred, wrapping, at every screen size */
+body.page-id-836 .elementor-element-481c0fb .uael-post__header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap {
+  margin: 0 0 32px !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 6px 22px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* The phone-only "All" dropdown is replaced by the same wrapping row the sample uses */
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > .uael-filters-dropdown {
+  display: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters > li.uael-post__header-filter {
+  display: block !important;
+  margin: 0 !important;
+  padding: 4px 0 !important;
+  background: none !important;
+  border: 0 !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 15.2px !important;   /* sample .95rem (root 16px) */
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #404040 !important;
+  cursor: pointer !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters > li.uael-post__header-filter:hover {
+  color: #57068c !important;
+  background: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters > li.uael-post__header-filter.uael-filter__current {
+  color: #57068c !important;
+  background: none !important;
+  border-bottom-color: #57068c !important;
+}
+
+/* Project rows (sample .project): image left, text right, thin grey line between rows */
+body.page-id-836 .elementor-element-481c0fb .uael-post-grid__inner {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post-wrapper {
+  width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__bg-wrap {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  border-top: 1px solid #d6d6d6 !important;
+  border-radius: 0 !important;
+  padding: 28px 0 !important;
+  margin: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post-wrapper:first-child .uael-post__bg-wrap {
+  border-top: 0 !important;
+}
+/* Whole-row invisible link removed: only image, title and "Learn more" are links, as on the sample */
+body.page-id-836 .elementor-element-481c0fb .uael-post__complete-box-overlay {
+  display: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__inner-wrap {
+  display: grid !important;
+  grid-template-columns: 1.05fr 1fr !important;
+  gap: 36px !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  transform: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail a {
+  display: block !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 12px !important;
+  transform: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__content-wrap {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  float: none !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  text-align: left !important;
+}
+
+/* Project title (sample h2.h3.big): 24px, semi-bold, violet, underline only on hover */
+body.page-id-836 .elementor-element-481c0fb .uael-post__title {
+  font-size: 24px !important;   /* sample 1.5rem (root 16px) */
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 0 0 0.5em !important;
+  padding: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__title a {
+  color: #57068c !important;
+  font: inherit !important;
+  text-decoration: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__title a:visited {
+  color: #3b0a63 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__title a:hover {
+  color: #330662 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+/* Short decorative line under the title: not on the sample */
+body.page-id-836 .elementor-element-481c0fb .uael-post__separator {
+  display: none !important;
+}
+
+/* Description (sample p): 17px, 1.65 line height, grey text */
+body.page-id-836 .elementor-element-481c0fb .uael-post__excerpt {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  margin: 0 0 17px !important;
+  padding: 0 !important;
+}
+
+/* "Learn more" (sample a.learn.more): 13.6px, no arrow, violet bar underneath */
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 0 2px !important;
+  font-size: 13.6px !important;   /* sample .85rem (root 16px); fixed px so phones do not shrink it */
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: #57068c !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px solid #57068c !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button .elementor-button-icon {
+  display: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button .elementor-button-text {
+  font-size: inherit !important;
+  letter-spacing: inherit !important;
+}
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button:hover {
+  color: #330662 !important;
+  background: transparent !important;
+}
+
+/* Phones and small tablets (sample @media max-width 800px): image on top, text below */
+@media (max-width: 800px) {
+  body.page-id-836 .elementor-element-481c0fb .uael-post__inner-wrap {
+    grid-template-columns: 1fr !important;
+  }
+  body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail,
+  body.page-id-836 .elementor-element-481c0fb .uael-post__content-wrap {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+}

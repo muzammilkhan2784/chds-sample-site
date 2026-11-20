@@ -1,0 +1,147 @@
+/* ===== News page (page-id-1503): news cards grid, matched to the sample news.html ===== */
+
+/* Section spacing, width and white background (sample: .section padding, .wrap 1120px with 20px side gutters) */
+body.page-id-1503 section.elementor-element-7e25400 {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  background-color: #ffffff !important;
+}
+body.page-id-1503 section.elementor-element-7e25400 > .elementor-container {
+  max-width: 1120px !important;
+}
+
+/* One even grid for all cards (sample: .cards). The five uneven rows (3, 2, 3, 3, 2) are flattened. */
+body.page-id-1503 .elementor-element-ff7f48a {
+  width: 100% !important;
+}
+body.page-id-1503 .elementor-element-ff7f48a > .elementor-widget-wrap {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)) !important;
+  gap: 28px !important;
+  padding: 0 !important;
+  align-items: start;
+}
+body.page-id-1503 .elementor-element-ff7f48a > .elementor-widget-wrap > .elementor-inner-section,
+body.page-id-1503 .elementor-element-ff7f48a > .elementor-widget-wrap > .elementor-inner-section > .elementor-container {
+  display: contents !important;
+}
+body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column > .elementor-widget-wrap {
+  padding: 0 !important;
+}
+/* The empty spare column at the end of the last row takes no grid cell */
+body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column:has(> .elementor-widget-wrap:not(.elementor-element-populated)) {
+  display: none !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box {
+  margin: 0 !important;
+}
+
+/* Card: logo on top, then title, then text, all left aligned (sample: .news-card) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-wrapper {
+  display: block !important;
+  text-align: left !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img {
+  display: block !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 0 12px 0 !important;
+  text-align: left !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img a {
+  display: block !important;
+  width: fit-content;
+}
+/* Logo: 44px tall, never wider than 160px (sample: .news-card img.logo) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img img {
+  display: block !important;
+  height: 44px !important;
+  width: auto !important;
+  max-width: 160px !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Text block; the space at the bottom holds the "Read more" link */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-content {
+  position: relative !important;
+  width: 100% !important;
+  text-align: left !important;
+  padding: 0 0 38px 0 !important;
+}
+
+/* Title (sample: h2.h3 = 1.3rem of 17px = 22.1px, weight 600) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title {
+  position: static !important;
+  font-size: 22.1px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 0 0 8.84px 0 !important;
+  padding: 0 !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a {
+  position: static !important;
+  color: #57068c !important;
+  text-decoration: none !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a:visited {
+  color: #3b0a63 !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a:hover {
+  color: #330662 !important;
+  text-decoration: underline !important;
+}
+
+/* Summary text (sample body: 17px / 1.65, #404040) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-description {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  color: #404040 !important;
+  margin: 0 !important;
+}
+
+/* "Read more" under each story that has a link (sample: .card .learn = 0.8rem of 17px = 13.6px).
+   It is drawn as part of the title link, so it opens the same article. */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a::after {
+  content: "Read more";
+  content: "Read more" / "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 13.6px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #57068c;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a:hover::after {
+  color: #330662;
+}
+
+/* Phones: keep the same left-aligned card (Elementor centres image boxes below 768px) */
+@media (max-width: 767px) {
+  body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column {
+    width: auto !important;
+  }
+  body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-wrapper {
+    text-align: left !important;
+  }
+  body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img {
+    margin: 0 0 12px 0 !important;
+  }
+}

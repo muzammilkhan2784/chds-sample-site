@@ -1,0 +1,239 @@
+/* ===== HOME PAGE body (page 1316): hero, About, Our Activities, In the News. Makes them match the sample site. =====
+   Everything below starts with "body.home .elementor-1316", so it cannot touch any other page, the header or the footer.
+   To undo: delete this whole block and click Publish. */
+
+/* H0. Page width (sample: 1120px wide, 20px side gutters), body text 17px / 1.65, and a clean slate for spacing */
+body.home .elementor-1316 > .elementor-top-section { padding-left: 20px !important; padding-right: 20px !important; }
+body.home .elementor-1316 > .elementor-top-section > .elementor-container { max-width: 1120px !important; }
+body.home .elementor-1316 .elementor-widget { margin-bottom: 0 !important; }
+body.home .elementor-1316 .elementor-widget > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body.home .elementor-1316 .elementor-widget-text-editor,
+body.home .elementor-1316 .elementor-widget-text-editor p {
+  font-size: 17px !important; line-height: 1.65 !important; font-weight: 400 !important;
+  letter-spacing: 0 !important; color: #404040 !important;
+}
+body.home .elementor-1316 .elementor-widget-text-editor p { margin: 0 0 1em !important; }
+
+/* H1. HERO */
+body.home .elementor-1316 .elementor-element-cdbd30f > .elementor-container { align-items: center !important; }
+/* teal bar above the headline: 56 x 5px */
+body.home .elementor-1316 .elementor-element-a20bf68 { margin-bottom: 22px !important; }
+body.home .elementor-1316 .elementor-element-a20bf68 .elementor-divider { padding: 0 !important; text-align: left !important; line-height: 0 !important; }
+body.home .elementor-1316 .elementor-element-a20bf68 .elementor-divider-separator {
+  display: block !important; width: 56px !important; margin: 0 !important; border: 0 !important; border-top: 5px solid #00a99d !important;
+}
+body.home .elementor-1316 .elementor-element-760a133 .elementor-heading-title {
+  font-size: clamp(41.6px, 6vw, 73.6px) !important; font-weight: 500 !important; line-height: 1.2 !important;
+  letter-spacing: -0.02em !important; color: #57068c !important; margin: 0 0 0.5em !important;
+}
+body.home .elementor-1316 .elementor-element-d558079,
+body.home .elementor-1316 .elementor-element-d558079 p { font-size: 16.8px !important; }
+body.home .elementor-1316 .elementor-element-d558079 p { max-width: 46ch !important; }
+/* "View our projects" link: 14.4px, arrow after the words */
+body.home .elementor-1316 .elementor-element-055d5c7 { margin-top: 10px !important; }
+body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button { font-size: 14.4px !important; text-decoration: none !important; }
+body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button-content-wrapper { flex-direction: row-reverse !important; gap: 0.4em !important; }
+/* photo: 4:3, rounded corners, no coloured block behind it */
+body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap { background: none !important; }
+body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap > .elementor-background-overlay { display: none !important; }
+body.home .elementor-1316 .elementor-element-abcdd5d img {
+  display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: 4 / 3 !important;
+  object-fit: cover !important; border-radius: 14px !important;
+}
+@media (min-width: 768px) {
+  /* tint covers exactly the left half, as on the sample */
+  body.home .elementor-1316 section.elementor-element-cdbd30f { background-image: linear-gradient(90deg, #eee6f3 50%, #ffffff 50%) !important; }
+  /* text and photo columns are exactly half each, so the text ends where the tint ends */
+  body.home .elementor-1316 .elementor-element-cdbd30f .elementor-element-4ace065,
+  body.home .elementor-1316 .elementor-element-cdbd30f .elementor-element-04914f9 { width: 50% !important; }
+  /* 48px between text and photo */
+  body.home .elementor-1316 .elementor-element-4ace065 > .elementor-widget-wrap { padding-left: 0 !important; padding-right: 24px !important; }
+  body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap { padding-left: 24px !important; padding-right: 0 !important; }
+}
+
+/* H2. ABOUT, OUR ACTIVITIES, IN THE NEWS: section spacing */
+body.home .elementor-1316 > .elementor-element-865b433,
+body.home .elementor-1316 > .elementor-element-e70a5f3,
+body.home .elementor-1316 > .elementor-element-7c0c10d {
+  padding-top: clamp(40px, 6vw, 80px) !important; padding-bottom: clamp(40px, 6vw, 80px) !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.home .elementor-1316 > .elementor-element-865b433,
+body.home .elementor-1316 > .elementor-element-7c0c10d { background: #ffffff !important; }
+body.home .elementor-1316 .elementor-element-865b433 .elementor-widget-wrap,
+body.home .elementor-1316 .elementor-element-e70a5f3 .elementor-widget-wrap,
+body.home .elementor-1316 .elementor-element-7c0c10d .elementor-widget-wrap { padding: 0 !important; }
+body.home .elementor-1316 .elementor-element-865b433 .elementor-inner-section,
+body.home .elementor-1316 .elementor-element-e70a5f3 .elementor-inner-section,
+body.home .elementor-1316 .elementor-element-7c0c10d .elementor-inner-section { margin: 0 !important; padding: 0 !important; }
+
+/* H3. ABOUT */
+body.home .elementor-1316 .elementor-element-a148329 .elementor-heading-title {
+  font-size: 16px !important; font-weight: 600 !important; line-height: 1.2 !important; letter-spacing: 0.04em !important;
+  text-transform: none !important; color: #595959 !important; margin: 0 0 0.4em !important;
+}
+body.home .elementor-1316 .elementor-element-7191e9e .elementor-heading-title {
+  font-size: clamp(24px, 2.6vw, 32px) !important; font-weight: 500 !important; line-height: 1.25 !important;
+  letter-spacing: 0 !important; color: #57068c !important; margin: 0 0 1em !important;
+}
+body.home .elementor-1316 .elementor-element-ebcb662 img {
+  display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; border-radius: 14px !important;
+}
+/* "Learn more" outlined button: gets its padding back (fixes the 0-padding bug in the earlier block) */
+body.home .elementor-1316 .elementor-element-0a195ba .elementor-button {
+  display: inline-block !important; padding: 9px 22px !important; font-size: 13.6px !important;
+  line-height: 1.65 !important; white-space: nowrap !important; border-radius: 0 !important;
+}
+@media (min-width: 768px) {
+  /* sample layout: label and statement run the full width, then photo left / text right with a 48px gap */
+  body.home .elementor-1316 .elementor-element-865b433 > .elementor-container {
+    display: grid !important; grid-template-columns: 1fr 1fr !important; column-gap: 48px !important; row-gap: 0 !important; align-items: start !important;
+  }
+  body.home .elementor-1316 .elementor-element-db386a3,
+  body.home .elementor-1316 .elementor-element-db386a3 > .elementor-widget-wrap { display: contents !important; }
+  body.home .elementor-1316 .elementor-element-a148329 { grid-column: 1 / -1 !important; grid-row: 1 !important; }
+  body.home .elementor-1316 .elementor-element-7191e9e { grid-column: 1 / -1 !important; grid-row: 2 !important; }
+  body.home .elementor-1316 .elementor-element-ebcb662 { grid-column: 1 !important; grid-row: 3 !important; width: 100% !important; max-width: 100% !important; }
+  body.home .elementor-1316 .elementor-element-e35e2f7 { grid-column: 2 !important; grid-row: 3 !important; width: 100% !important; min-width: 0 !important; }
+}
+
+/* H4. Section headings "Our Activities" / "In the News" and their "View all projects" / "View more" links */
+body.home .elementor-1316 .elementor-element-896b37d { display: none !important; } /* small dots icon above "Our Activities": not on the sample */
+/* 26px between the heading row and the cards (written with the parent section so it beats the margin reset in H2) */
+body.home .elementor-1316 .elementor-element-e70a5f3 .elementor-element-7b6e9cb,
+body.home .elementor-1316 .elementor-element-7c0c10d .elementor-element-6919d7e { margin-bottom: 26px !important; }
+body.home .elementor-1316 .elementor-element-7b6e9cb > .elementor-container,
+body.home .elementor-1316 .elementor-element-6919d7e > .elementor-container {
+  display: flex !important; flex-wrap: wrap !important; align-items: baseline !important;
+  justify-content: space-between !important; gap: 20px !important;
+}
+body.home .elementor-1316 .elementor-element-b2d8a7a,
+body.home .elementor-1316 .elementor-element-519a5b3,
+body.home .elementor-1316 .elementor-element-894f2b4,
+body.home .elementor-1316 .elementor-element-b777d6a { width: auto !important; flex: 0 1 auto !important; }
+body.home .elementor-1316 .elementor-element-73c7132 .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-8949ef6 .elementor-heading-title {
+  font-size: clamp(27.2px, 3vw, 36.8px) !important; font-weight: 500 !important; line-height: 1.2 !important;
+  letter-spacing: -0.01em !important; color: #57068c !important; margin: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-c5d1b47 .elementor-button,
+body.home .elementor-1316 .elementor-element-852353c .elementor-button { font-size: 13.6px !important; text-decoration: none !important; }
+
+/* H5. Card grids (Our Activities and In the News): 3 across, 28px gaps, fold to 2 then 1 on narrow screens */
+body.home .elementor-1316 .elementor-element-ea27f0e > .elementor-container,
+body.home .elementor-1316 .elementor-element-14f4a5a > .elementor-container {
+  display: grid !important; grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)) !important; gap: 28px !important;
+}
+body.home .elementor-1316 .elementor-element-feebd2d,
+body.home .elementor-1316 .elementor-element-bc81565,
+body.home .elementor-1316 .elementor-element-7b33ced,
+body.home .elementor-1316 .elementor-element-7a92e59,
+body.home .elementor-1316 .elementor-element-b7e6825,
+body.home .elementor-1316 .elementor-element-a5f3905 { width: 100% !important; min-width: 0 !important; }
+
+/* H6. Our Activities cards */
+body.home .elementor-1316 .elementor-element-c104ac0,
+body.home .elementor-1316 .elementor-element-f42192b,
+body.home .elementor-1316 .elementor-element-7ba5dc1 { margin-bottom: 14px !important; }
+body.home .elementor-1316 .elementor-element-c104ac0 a,
+body.home .elementor-1316 .elementor-element-f42192b a,
+body.home .elementor-1316 .elementor-element-7ba5dc1 a { display: block !important; }
+body.home .elementor-1316 .elementor-element-c104ac0 img,
+body.home .elementor-1316 .elementor-element-f42192b img,
+body.home .elementor-1316 .elementor-element-7ba5dc1 img {
+  display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: 16 / 10 !important;
+  object-fit: cover !important; border-radius: 12px !important;
+}
+body.home .elementor-1316 .elementor-element-f42192b img { object-fit: contain !important; background: #ffffff !important; }
+body.home .elementor-1316 .elementor-element-4ccc243 .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-55b3817 .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-cd444dd .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-title {
+  font-size: 19.2px !important; font-weight: 600 !important; line-height: 1.2 !important;
+  letter-spacing: 0 !important; color: #57068c !important; margin: 0 0 0.4em !important; padding: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-4ccc243 .elementor-heading-title a,
+body.home .elementor-1316 .elementor-element-55b3817 .elementor-heading-title a,
+body.home .elementor-1316 .elementor-element-cd444dd .elementor-heading-title a,
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-title a {
+  color: #57068c !important; font-weight: 600 !important; text-decoration: none !important;
+}
+body.home .elementor-1316 .elementor-element-4ccc243 .elementor-heading-title a:hover,
+body.home .elementor-1316 .elementor-element-55b3817 .elementor-heading-title a:hover,
+body.home .elementor-1316 .elementor-element-cd444dd .elementor-heading-title a:hover,
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-title a:hover { text-decoration: underline !important; }
+body.home .elementor-1316 .elementor-element-4602516 p,
+body.home .elementor-1316 .elementor-element-c83cc23 p,
+body.home .elementor-1316 .elementor-element-e7e830b p { margin: 0 0 0.6em !important; }
+
+/* H7. In the News cards: logo ABOVE a bold title (was logo to the left of a light title) */
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-wrapper { display: block !important; text-align: left !important; }
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-img {
+  display: block !important; width: auto !important; max-width: none !important; margin: 0 0 12px !important; padding: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-img a { display: block !important; }
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-img img {
+  display: block !important; height: 44px !important; width: auto !important; max-width: 160px !important;
+  object-fit: contain !important; border-radius: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-content { width: 100% !important; text-align: left !important; }
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-description {
+  font-size: 17px !important; line-height: 1.65 !important; font-weight: 400 !important; letter-spacing: 0 !important;
+  color: #404040 !important; margin: 0 0 0.6em !important;
+}
+
+/* H8. "Learn more" / "Read more" under each card: small underlined link, no bar, no icon (sample "learn" link) */
+body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button,
+body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button,
+body.home .elementor-1316 .elementor-element-f72f99e .elementor-button,
+body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button,
+body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button,
+body.home .elementor-1316 .elementor-element-4e5183b .elementor-button {
+  border: 0 !important; padding: 0 !important; font-size: 12.8px !important; line-height: 1.65 !important;
+  text-decoration: underline !important; text-underline-offset: 2px !important;
+}
+body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-f72f99e .elementor-button-text,
+body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-4e5183b .elementor-button-text {
+  text-decoration: underline !important; text-underline-offset: 2px !important;
+}
+body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-f72f99e .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-4e5183b .elementor-button-icon { display: none !important; }
+
+/* H9. Phones (Elementor stacks the columns at 767px) */
+@media (max-width: 767px) {
+  /* hero: text first, 48px gap, then the photo; links stay left-aligned as on the sample */
+  body.home .elementor-1316 .elementor-element-4ace065 > .elementor-widget-wrap,
+  body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap { padding-left: 0 !important; padding-right: 0 !important; }
+  body.home .elementor-1316 .elementor-element-4ace065 { margin-bottom: 48px !important; }
+  body.home .elementor-1316 .elementor-element-055d5c7,
+  body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-1ce5bd2,
+  body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-8da2cc5,
+  body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-f72f99e,
+  body.home .elementor-1316 .elementor-element-f72f99e .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-f509ab5,
+  body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-70c9fa7,
+  body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-4e5183b,
+  body.home .elementor-1316 .elementor-element-4e5183b .elementor-button-wrapper { text-align: left !important; }
+  body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button,
+  body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button,
+  body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button,
+  body.home .elementor-1316 .elementor-element-f72f99e .elementor-button,
+  body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button,
+  body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button,
+  body.home .elementor-1316 .elementor-element-4e5183b .elementor-button { width: auto !important; }
+  /* About: photo full width, 48px above the text */
+  body.home .elementor-1316 .elementor-element-ebcb662 { width: 100% !important; max-width: 100% !important; margin-bottom: 48px !important; }
+}

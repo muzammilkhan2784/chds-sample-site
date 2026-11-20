@@ -1,0 +1,262 @@
+/* ===== Contact page (page-id-533): body = intro text, email, address, form. Matches sample contact.html ===== */
+
+/* Section: same top/bottom space and content width as the sample (.section + .wrap), plain white */
+body.page-id-533 section.elementor-element-7379474 {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+/* Two equal columns, 48px apart, both starting at the top (sample .two-col) */
+body.page-id-533 section.elementor-element-7379474 > .elementor-container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 48px !important;
+  align-items: start !important;
+  max-width: 1120px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-column.elementor-element-4e58373,
+body.page-id-533 .elementor-column.elementor-element-f64c5d9 {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-533 .elementor-column.elementor-element-4e58373 > .elementor-widget-wrap,
+body.page-id-533 .elementor-column.elementor-element-f64c5d9 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+  align-content: flex-start !important;
+  align-items: flex-start !important;
+}
+/* The form sits on plain white in the sample: remove the tinted panel behind it.
+   (This overrides the light-violet panel colour set earlier in the brand CSS.) */
+body.page-id-533 .elementor-column.elementor-element-f64c5d9 > .elementor-widget-wrap {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* "Get in touch" heading (sample h2: clamp(1.7rem, 3vw, 2.3rem) with a 16px root) */
+body.page-id-533 .elementor-element-047c166 {
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-047c166 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-047c166 .elementor-heading-title {
+  color: #57068c !important;
+  font-size: clamp(27.2px, 3vw, 36.8px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  text-align: left !important;
+  text-transform: none !important;
+  margin: 0 0 0.5em !important;
+  padding: 0 !important;
+}
+
+/* Intro paragraph (sample body text: 17px / 1.65, #404040) */
+body.page-id-533 .elementor-element-1a64e45 {
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-1a64e45 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-1a64e45,
+body.page-id-533 .elementor-element-1a64e45 p {
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+}
+body.page-id-533 .elementor-element-1a64e45 p {
+  margin: 0 0 1em !important;
+}
+
+/* Email + address block: no inner padding, no icons, plain text as on the sample */
+body.page-id-533 section.elementor-element-d8a5f44 {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 section.elementor-element-d8a5f44 > .elementor-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-533 .elementor-column.elementor-element-f08db91 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Envelope icon and map-pin icon are not on the sample */
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-icon,
+body.page-id-533 .elementor-element-0c94226 {
+  display: none !important;
+}
+/* Email link: violet, underlined, same size as body text */
+body.page-id-533 .elementor-element-f7bf51f {
+  margin: 0 0 17px !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-f7bf51f > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-items,
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  justify-content: flex-start !important;
+}
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item > a {
+  display: inline !important;
+  width: auto !important;
+  color: #57068c !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: normal !important;
+}
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item > a:hover { color: #330662 !important; }
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item > a:visited { color: #3b0a63 !important; }
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-text {
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+/* Address: two plain lines under the email */
+body.page-id-533 .elementor-element-cfccac6 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+body.page-id-533 .elementor-element-cfccac6 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-cfccac6,
+body.page-id-533 .elementor-element-cfccac6 p {
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.65 !important;
+  text-align: left !important;
+}
+body.page-id-533 .elementor-element-cfccac6 p { margin: 0 !important; }
+/* Thin line under the address is not on the sample */
+body.page-id-533 .elementor-element-c21786f { display: none !important; }
+
+/* Form (sample "Contact" form rules).
+   :not(#wpforms-22-field_4-container) skips WPForms' hidden anti-spam field so it stays hidden. */
+body.page-id-533 .elementor-element-a0522ba {
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-a0522ba > .elementor-widget-container,
+body.page-id-533 #wpforms-22,
+body.page-id-533 #wpforms-form-22 .wpforms-field-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) {
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+  clear: both !important;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) .wpforms-field-label {
+  display: block !important;
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  margin: 0 0 4px !important;
+  padding: 0 !important;
+}
+/* The * is the same colour and weight as the label on the sample (not red) */
+body.page-id-533 #wpforms-form-22 .wpforms-required-label {
+  color: inherit !important;
+  font-weight: inherit !important;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) input[type="text"],
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) input[type="email"],
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) textarea {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 10px !important;
+  margin: 0 0 16px !important;
+  border: 1px solid #595959 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: #ffffff !important;
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+/* Message box: 6 lines tall, as on the sample (rows="6") */
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) textarea {
+  height: calc(6 * 1.65em + 22px) !important;
+  resize: vertical;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-submit-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+/* Submit: sample "form .submit" (17px, roomy padding). Overrides the 0.85rem set earlier */
+body.page-id-533 #wpforms-form-22 button.wpforms-submit {
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 9px 26px !important;
+  margin: 0 !important;
+  background: #ffffff !important;
+  color: #57068c !important;
+  border: 2px solid #57068c !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  cursor: pointer;
+}
+body.page-id-533 #wpforms-form-22 button.wpforms-submit:hover {
+  background: #57068c !important;
+  color: #ffffff !important;
+}
+
+/* Phones and small tablets: one column, form under the text (sample @media max-width: 800px) */
+@media (max-width: 800px) {
+  body.page-id-533 section.elementor-element-7379474 > .elementor-container {
+    grid-template-columns: 1fr !important;
+  }
+}

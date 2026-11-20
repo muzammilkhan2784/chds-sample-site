@@ -1,0 +1,286 @@
+/* ===== Single project pages (the six pages opened from Our Work; Elementor single-post template 2029) =====
+   Pages: Structural Factors (2365), New data (2136), Smart Community (2092), NSF CAREER (2077),
+   Social Determinants (2050), NYU-Moi (2019). Every rule below is limited to these six pages.
+   Paste at the very end of Additional CSS. To undo: delete this block and Publish. */
+
+/* P1. Top band: light violet, image left, title right (sample "section tint" + "page-head") */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e {
+  background-color: #eee6f3 !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 80px) 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-135e8cb > .elementor-container {
+  width: min(1120px, calc(100% - 40px)) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container {
+  gap: 40px !important;
+  align-items: stretch !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 > .elementor-widget-wrap,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 > .elementor-widget-wrap,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-61485e3 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 > .elementor-widget-wrap,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 > .elementor-widget-wrap {
+  position: relative !important;
+  align-content: center !important;
+  align-items: center !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-a615a59,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-3254e27 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-a615a59 > .elementor-widget-container,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-3254e27 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-a615a59 img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  border-radius: 12px !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-3254e27 .elementor-heading-title {
+  font-size: clamp(32px, 4vw, 48px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: #57068c !important;
+  text-align: left !important;
+  text-transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media (min-width: 801px) {
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container { flex-wrap: nowrap !important; }
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 { width: calc((100% - 40px) * 1.05 / 2.05) !important; }
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 { width: calc((100% - 40px) / 2.05) !important; }
+}
+/* Phones and small tablets: image on top, title underneath (the sample switches at 800px) */
+@media (max-width: 800px) {
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container { flex-wrap: wrap !important; }
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4,
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 { width: 100% !important; }
+}
+
+/* P2. "Back to Our Work" link above the image. Only takes effect after the editor step that adds a
+       Text Editor widget with the CSS class "chds-back" to the template (does nothing until then). */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e:has(.chds-back) {
+  padding-top: calc(clamp(40px, 6vw, 80px) + 40px) !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back {
+  position: absolute !important;
+  top: -40px !important;
+  left: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  white-space: nowrap;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back p,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back a {
+  font-size: 15.2px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  text-align: left !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back p {
+  margin: 0 !important;
+}
+
+/* P3. Text area: white band, text column 78 characters wide and left-aligned (sample "prose") */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-135e8cb {
+  background-color: #ffffff !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 80px) 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-61485e3 { width: 100% !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 { margin: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 > .elementor-widget-container {
+  max-width: 78ch !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: left !important;
+}
+/* Remove the extra padding and width limits of the blocks nested inside the page text */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-section,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con-inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con {
+  --padding-top: 0px; --padding-bottom: 0px; --padding-left: 0px; --padding-right: 0px;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-container,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con-inner {
+  width: 100% !important;
+  max-width: none !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-wrap { padding: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget { margin-bottom: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-text-editor {
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: left !important;
+}
+
+/* P4. Body text: 17px, line height 1.65, grey #404040, one line of space between paragraphs */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li {
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: left !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p { margin: 0 0 1em !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p:empty { display: none !important; }
+/* Text sizes typed straight into the page (16px, 1rem, 1.5rem) follow the paragraph or heading instead */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p span,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p a,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p i,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p em,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li span,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li a,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 :is(h2, h3, h4) span {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 ul,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 ol {
+  margin: 1em 0 !important;
+  padding-left: 1.2em !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 ul { list-style: disc outside !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li { margin: 0 !important; }
+/* Structural Factors page only: hide a stray blank line (an empty block pasted in after the last paper) */
+body.postid-2365 .elementor-element-dbe8f43 div[style*="margin-left"] { display: none !important; }
+
+/* P5. Section headings "Relevant Papers", "Funders", "Students" and so on (sample ".prose h2": 1.5rem = 24px) */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 :is(h2, h3, h4) {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  color: #57068c !important;
+  text-align: left !important;
+  text-transform: none !important;
+  margin: 1.6em 0 0.5em !important;
+  padding: 0 !important;
+}
+/* Structural Factors page only: its headings are separate Elementor heading widgets, so the
+   paragraph space above them (17px) is taken off to keep the same gap as the sample */
+body.postid-2365 .elementor-element-281b168 .elementor-widget-heading .elementor-heading-title {
+  margin-top: calc(1.6em - 17px) !important;
+}
+
+/* P6. Funder logos: at most 130px tall, natural proportions, side by side from the left (sample ".funders img") */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 img {
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 130px !important;
+  margin: 0 20px 14px 0 !important;
+  vertical-align: middle !important;
+  border-radius: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 figure {
+  display: inline-block !important;
+  margin: 0 !important;
+  vertical-align: middle;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-image {
+  width: auto !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+/* Social Determinants: the two logos sit next to each other instead of in two half-width columns */
+body.postid-2050 section.elementor-element-b0f36cc > .elementor-container {
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+body.postid-2050 .elementor-element-9a3c6f4,
+body.postid-2050 .elementor-element-1a5e0a4 {
+  width: auto !important;
+  max-width: 100% !important;
+}
+/* New data: the two logos (Facebook, NSF) sit next to each other */
+body.postid-2136 .elementor-element-f2fb37b .wp-block-columns {
+  display: block !important;
+  margin: 0 !important;
+}
+body.postid-2136 .elementor-element-f2fb37b .wp-block-column {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle;
+}
+/* New data: "Award Page" is an ordinary text link on the sample, not a button */
+body.postid-2136 .elementor-element-f2fb37b .wp-block-buttons {
+  display: block !important;
+  margin: 0 0 1em !important;
+}
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button { display: inline !important; margin: 0 !important; }
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link,
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link:hover,
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link:focus {
+  display: inline !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #57068c !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link:hover { color: #330662 !important; }
+
+/* P7. NYU-Moi: the three links at the bottom become a bulleted list (sample "Related links" list).
+       The links themselves are not changed: they stay on nyu-moi-dssd.squarespace.com for now. */
+body.postid-2019 .elementor-element-4bb68700 .wp-block-buttons-is-layout-flex {
+  display: block !important;
+  margin: 1em 0 !important;
+  padding: 0 0 0 1.2em !important;
+  gap: 0 !important;
+}
+body.postid-2019 .elementor-element-4bb68700 .wp-block-buttons-is-layout-flex > p { display: none !important; }
+body.postid-2019 .elementor-element-4bb68700 .wp-block-buttons-is-layout-flex > div {
+  display: list-item !important;
+  list-style: disc outside !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040;
+  text-align: left !important;
+}

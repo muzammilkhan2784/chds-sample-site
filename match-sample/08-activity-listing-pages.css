@@ -1,0 +1,246 @@
+/* ===== Activity listing pages: Building Capacity (page 2056), Public Health Best Practices (page 2064), Valuing Diverse Stakeholder Collaborations (page 2066, incl. its page 2) =====
+   The three pages are copies of each other, so they share the same Elementor block IDs
+   (title section fc783d3 / column 08d0216 / heading 8b04647, list section 833ef18 / column 71fcc77 / posts widget 18d5790).
+   Every rule is locked to these three page IDs, so no other page, and no header or footer, is touched. */
+
+/* --- 1. Page title band (sample ".page-title"): light violet, centred, teal bar above the title --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-fc783d3 {
+  background-color: #eee6f3 !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 72px) 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-fc783d3 > .elementor-container,
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-833ef18 > .elementor-container {
+  max-width: min(1120px, calc(100% - 40px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-08d0216 > .elementor-widget-wrap,
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-71fcc77 > .elementor-widget-wrap {
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 {
+  margin: 0 !important;
+  text-align: center !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 > .elementor-widget-container::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 5px;
+  background: #00a99d;
+  margin: 0 auto 22px;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 .elementor-heading-title {
+  color: #57068c !important;
+  font-size: clamp(37.4px, 5vw, 57.8px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  text-transform: none !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- 2. List section (sample ".section" + ".wrap"): white, sample spacing --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-833ef18 {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 80px) 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790,
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post-grid__inner {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- 3. Each project row (sample ".project"): picture left, text right, thin grey line between rows --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post-wrapper {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 28px 0 !important;
+  border-top: 1px solid #d6d6d6 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post-wrapper:first-child {
+  border-top: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__bg-wrap {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* The invisible "whole box is a link" layer: removed so that only the picture, the title and "Learn more" are links (as on the sample) */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__complete-box-overlay {
+  display: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__inner-wrap {
+  display: grid !important;
+  grid-template-columns: 1.05fr 1fr !important;
+  gap: 36px !important;
+  align-items: center !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__thumbnail {
+  position: static !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__thumbnail a {
+  display: block !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__thumbnail img {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: fill !important;
+  border-radius: 12px !important;
+  opacity: 1 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__content-wrap {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  background: transparent !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__separator {
+  display: none !important;
+}
+
+/* --- 4. Row text (sample "h2.h3", paragraph and ".more" link) --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title {
+  color: #57068c !important;
+  font-size: 22.1px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-align: left !important;
+  margin: 0 0 11px !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title a {
+  color: #57068c !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+  text-decoration: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title a:visited {
+  color: #3b0a63 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title a:hover {
+  color: #330662 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__excerpt {
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  text-align: left !important;
+  margin: 0 0 17px !important;
+  padding: 0 !important;
+}
+/* "Learn more": the brand CSS already makes it violet, uppercase, with the violet bar underneath. Here: sample size, no arrow, left aligned */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__read-more.elementor-button {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 0 2px !important;
+  font-size: 14.45px !important;
+  line-height: 1.3 !important;
+  text-decoration: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__read-more .elementor-button-icon {
+  display: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__read-more .elementor-button-text {
+  font-size: 14.45px !important;
+  line-height: 1.3 !important;
+}
+
+/* --- 5. Page numbers under the list (Stakeholders only; sample ".back" line): centred, plain violet links --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__footer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination {
+  text-align: center !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+  font-size: 16.15px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination .page-numbers {
+  display: inline-block !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 5px !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #57068c !important;
+  font-family: "Inter", Arial, sans-serif !important;
+  font-size: 16.15px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination a.page-numbers {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination a.page-numbers:hover {
+  color: #330662 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination .page-numbers.current {
+  color: #404040 !important;
+  text-decoration: none !important;
+}
+
+/* --- 6. Phones and small tablets (sample: max-width 800px): picture on top, text underneath --- */
+@media (max-width: 800px) {
+  body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__inner-wrap {
+    grid-template-columns: 1fr !important;
+  }
+}
