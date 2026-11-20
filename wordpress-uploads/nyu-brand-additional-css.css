@@ -216,3 +216,14 @@ img[src*="/2022/07/icon.png"], img[data-src*="/2022/07/icon.png"] {
     background-color: #eee6f3 !important;
   }
 }
+
+/* 8. Sticky header: solid violet, as on the sample, so page text no longer shows through it */
+#ast-fixed-header .ast-primary-header-bar,
+#ast-fixed-header .main-header-bar {
+  background-color: #57068c !important;
+}
+
+/* 9. Our Work filter menu ("All" dropdown) also in Inter */
+[class*="uael-filters"], .uael-post__header-filter {
+  font-family: "Inter", Arial, sans-serif !important;
+}
