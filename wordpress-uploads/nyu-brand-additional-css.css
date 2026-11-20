@@ -77,6 +77,9 @@ section.elementor-element-cdbd30f .elementor-background-overlay {
   border-color: #330662 !important;
 }
 
+/* Team member names: near-black, as on the sample (was a dark green-black) */
+.uael-team-name { color: #1d1d1d !important; }
+
 /* Contact form "Submit" button, block-editor buttons (e.g. "Award Page"),
    and links that still have the old teal typed straight into the page text */
 .wpforms-submit,
