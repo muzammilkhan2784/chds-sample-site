@@ -128,3 +128,11 @@ img[src*="/2022/07/icon.png"], img[data-src*="/2022/07/icon.png"] {
   transform: translateX(-10000px);
   filter: drop-shadow(10000px 0 0 #57068c);
 }
+
+/* 6. Phones: the home hero's half-and-half background looks odd when stacked, so tint it fully */
+@media (max-width: 767px) {
+  section.elementor-element-cdbd30f {
+    background-image: none !important;
+    background-color: #eee6f3 !important;
+  }
+}
