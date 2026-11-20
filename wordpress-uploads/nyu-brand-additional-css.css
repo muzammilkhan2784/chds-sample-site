@@ -5,6 +5,27 @@
    Colours: NYU violet #57068c, deep violet #330662, text #404040, light violet #eee6f3.
    To undo everything here: delete this whole block and click Publish. */
 
+/* 0. Site colour palette: the old greens and grey-green become NYU colours */
+:root, body, .elementor-kit-4 {
+  --ast-global-color-0: #57068C !important;  /* was green #1BAE70 */
+  --ast-global-color-1: #330662 !important;  /* was dark green #06752E */
+  --ast-global-color-2: #1D1D1D !important;  /* was #14261C */
+  --ast-global-color-3: #404040 !important;  /* body text, was #4E5652 */
+  --ast-global-color-4: #F2F2F2 !important;  /* was #F4F6F4 */
+  --e-global-color-astglobalcolor0: #57068C !important;
+  --e-global-color-astglobalcolor1: #330662 !important;
+  --e-global-color-astglobalcolor2: #1D1D1D !important;
+  --e-global-color-astglobalcolor3: #404040 !important;
+  --e-global-color-astglobalcolor4: #F2F2F2 !important;
+  --e-global-color-558aae3: #57068C !important;  /* was teal #1EA5AF */
+  --e-global-color-9ea8ef5: #57068C !important;  /* was green #12904C */
+  --e-global-color-d3aebd8: #57068C !important;  /* was #550687 */
+  --e-global-color-primary: #57068C !important;
+  --e-global-color-secondary: #404040 !important;
+  --e-global-color-text: #404040 !important;
+  --e-global-color-accent: #57068C !important;
+}
+
 /* 1. One font everywhere (replaces Lato, Poppins and Montserrat) */
 body, button, input, select, textarea,
 h1, h2, h3, h4, h5, h6, p, li, td, th, a,
@@ -35,4 +56,44 @@ section.elementor-element-b8e71ac {
 /* Home hero: left panel was mint, now light violet */
 section.elementor-element-cdbd30f {
   background-image: linear-gradient(270deg, #ffffff 40%, #eee6f3 40%) !important;
+}
+
+/* 3. Buttons and links: old teal and grey -> NYU violet (teal on white was too faint to read) */
+.elementor-button,
+.elementor-button .elementor-button-text,
+.elementor-button .elementor-button-icon,
+.elementor-button i {
+  color: #57068c !important;
+  border-color: #57068c !important;
+}
+.elementor-button:hover, .elementor-button:focus,
+.elementor-button:hover .elementor-button-text, .elementor-button:focus .elementor-button-text,
+.elementor-button:hover .elementor-button-icon, .elementor-button:hover i {
+  color: #330662 !important;
+  border-color: #330662 !important;
+}
+
+/* 4. Header at the top of the page: CONTACT button and current-page menu item */
+#masthead .ast-custom-button {
+  color: #57068c !important;
+  border-color: #57068c !important;
+}
+#masthead .ast-custom-button:hover {
+  background-color: #57068c !important;
+  color: #ffffff !important;
+}
+#masthead .main-header-menu .current-menu-item > .menu-link,
+#masthead .main-header-menu .menu-link:hover {
+  color: #57068c !important;
+}
+
+/* Sticky header (violet bar after scrolling) keeps white text and a white CONTACT button */
+#ast-fixed-header .main-header-menu .menu-link,
+#ast-fixed-header .main-header-menu .current-menu-item > .menu-link {
+  color: #ffffff !important;
+}
+#ast-fixed-header .ast-custom-button {
+  color: #330662 !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
 }
