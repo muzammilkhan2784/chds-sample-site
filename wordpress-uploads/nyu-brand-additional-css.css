@@ -95,16 +95,9 @@ section.elementor-element-cdbd30f .elementor-background-overlay {
   fill: #ffffff !important;
 }
 
-/* 3b. "View all projects", "View more" and every "Learn more" / "Read more"
-       (sample "more" and "learn" links): violet text with a violet bar underneath */
-.elementor-element-c5d1b47 .elementor-button,
-.elementor-element-852353c .elementor-button,
-.elementor-element-1ce5bd2 .elementor-button,
-.elementor-element-8da2cc5 .elementor-button,
-.elementor-element-f72f99e .elementor-button,
-.elementor-element-70c9fa7 .elementor-button,
-.elementor-element-4e5183b .elementor-button,
-.elementor-widget-uael-posts .elementor-button {
+/* 3b. Every other button: "View all projects", "View more", every "Learn more" / "Read more",
+       and any button added later (sample "more" and "learn" links): violet text with a violet bar underneath */
+.elementor-button {
   color: #57068c !important;
   background: transparent !important;
   border: 0 !important;
@@ -116,23 +109,14 @@ section.elementor-element-cdbd30f .elementor-background-overlay {
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
 }
-.elementor-element-c5d1b47 .elementor-button *, .elementor-element-852353c .elementor-button *,
-.elementor-element-1ce5bd2 .elementor-button *, .elementor-element-8da2cc5 .elementor-button *,
-.elementor-element-f72f99e .elementor-button *, .elementor-element-70c9fa7 .elementor-button *,
-.elementor-element-4e5183b .elementor-button *, .elementor-widget-uael-posts .elementor-button * {
+.elementor-button * {
   color: #57068c !important;
   fill: #57068c !important;
 }
-.elementor-element-c5d1b47 .elementor-button:hover, .elementor-element-852353c .elementor-button:hover,
-.elementor-element-1ce5bd2 .elementor-button:hover, .elementor-element-8da2cc5 .elementor-button:hover,
-.elementor-element-f72f99e .elementor-button:hover, .elementor-element-70c9fa7 .elementor-button:hover,
-.elementor-element-4e5183b .elementor-button:hover, .elementor-widget-uael-posts .elementor-button:hover {
+.elementor-button:hover {
   border-bottom-color: #330662 !important;
 }
-.elementor-element-c5d1b47 .elementor-button:hover *, .elementor-element-852353c .elementor-button:hover *,
-.elementor-element-1ce5bd2 .elementor-button:hover *, .elementor-element-8da2cc5 .elementor-button:hover *,
-.elementor-element-f72f99e .elementor-button:hover *, .elementor-element-70c9fa7 .elementor-button:hover *,
-.elementor-element-4e5183b .elementor-button:hover *, .elementor-widget-uael-posts .elementor-button:hover * {
+.elementor-button:hover * {
   color: #330662 !important;
   fill: #330662 !important;
 }
