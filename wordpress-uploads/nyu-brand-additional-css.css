@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-/* ===== NYU brand update, November 2026 =====
+/* ===== NYU brand update, November 2026: makes the live site match the sample site =====
    Font: Inter (the font NYU Tandon's website uses) until NYU Perstare is licensed.
    Colours: NYU violet #57068c, deep violet #330662, text #404040, light violet #eee6f3.
+   Teal is no longer used for text or buttons (too faint to read on white).
    To undo everything here: delete this whole block and click Publish. */
 
 /* 0. Site colour palette: the old greens and grey-green become NYU colours */
@@ -35,11 +36,12 @@ h1, h2, h3, h4, h5, h6, p, li, td, th, a,
 .uael-team-name, .uael-team-desig, .uael-post__title, .uael-post__excerpt {
   font-family: "Inter", Arial, sans-serif !important;
 }
-
-/* Inter is wider than Poppins, so the old very tight heading spacing is eased */
+/* Headings: same spacing as the sample */
 .elementor-heading-title { letter-spacing: -0.02em !important; }
+/* Team member names: near-black, as on the sample */
+.uael-team-name { color: #1d1d1d !important; }
 
-/* 2. Faint mint backgrounds -> light violet, as on the sample site */
+/* 2. Faint mint backgrounds -> light violet, as on the sample */
 /* "Are you a researcher..." band above the footer (every page) */
 section.elementor-element-25e2f0b,
 /* Page title bands: Team, News, Contact, Our Work */
@@ -62,66 +64,160 @@ section.elementor-element-cdbd30f .elementor-background-overlay {
   background-color: #57068c !important;
 }
 
-/* 3. Buttons and links: old teal and grey -> NYU violet (teal on white was too faint to read) */
-.elementor-button,
-.elementor-button .elementor-button-text,
-.elementor-button .elementor-button-icon,
-.elementor-button i {
-  color: #57068c !important;
-  border-color: #57068c !important;
-}
-.elementor-button:hover, .elementor-button:focus,
-.elementor-button:hover .elementor-button-text, .elementor-button:focus .elementor-button-text,
-.elementor-button:hover .elementor-button-icon, .elementor-button:hover i {
-  color: #330662 !important;
-  border-color: #330662 !important;
-}
+/* 3. Buttons and links, styled like the sample */
 
-/* Team member names: near-black, as on the sample (was a dark green-black) */
-.uael-team-name { color: #1d1d1d !important; }
-
-/* Contact form "Submit" button, block-editor buttons (e.g. "Award Page"),
-   and links that still have the old teal typed straight into the page text */
+/* 3a. Outline buttons (sample "btn-outline"): home About "Learn More", the "Contact us" band,
+       the contact form "Submit", and block buttons such as "Award Page" */
+.elementor-element-0a195ba .elementor-button,
+.elementor-element-2b09c86 .elementor-button,
 .wpforms-submit,
 .wp-block-button__link {
   color: #57068c !important;
-  border-color: #57068c !important;
+  background: #ffffff !important;
+  border: 2px solid #57068c !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
 }
+.elementor-element-0a195ba .elementor-button *,
+.elementor-element-2b09c86 .elementor-button * {
+  color: #57068c !important;
+  fill: #57068c !important;
+}
+.elementor-element-0a195ba .elementor-button:hover, .elementor-element-0a195ba .elementor-button:hover *,
+.elementor-element-2b09c86 .elementor-button:hover, .elementor-element-2b09c86 .elementor-button:hover *,
 .wpforms-submit:hover,
 .wp-block-button__link:hover {
-  background-color: #57068c !important;
+  background: #57068c !important;
   color: #ffffff !important;
-}
-a[style*="1ea5af" i] {
-  color: #57068c !important;
+  fill: #ffffff !important;
 }
 
-/* 4. Header at the top of the page: CONTACT button and current-page menu item */
+/* 3b. "View all projects", "View more" and every "Learn more" / "Read more"
+       (sample "more" and "learn" links): violet text with a violet bar underneath */
+.elementor-element-c5d1b47 .elementor-button,
+.elementor-element-852353c .elementor-button,
+.elementor-element-1ce5bd2 .elementor-button,
+.elementor-element-8da2cc5 .elementor-button,
+.elementor-element-f72f99e .elementor-button,
+.elementor-element-70c9fa7 .elementor-button,
+.elementor-element-4e5183b .elementor-button,
+.elementor-widget-uael-posts .elementor-button {
+  color: #57068c !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px solid #57068c !important;
+  border-radius: 0 !important;
+  padding: 0 0 2px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+.elementor-element-c5d1b47 .elementor-button *, .elementor-element-852353c .elementor-button *,
+.elementor-element-1ce5bd2 .elementor-button *, .elementor-element-8da2cc5 .elementor-button *,
+.elementor-element-f72f99e .elementor-button *, .elementor-element-70c9fa7 .elementor-button *,
+.elementor-element-4e5183b .elementor-button *, .elementor-widget-uael-posts .elementor-button * {
+  color: #57068c !important;
+  fill: #57068c !important;
+}
+.elementor-element-c5d1b47 .elementor-button:hover, .elementor-element-852353c .elementor-button:hover,
+.elementor-element-1ce5bd2 .elementor-button:hover, .elementor-element-8da2cc5 .elementor-button:hover,
+.elementor-element-f72f99e .elementor-button:hover, .elementor-element-70c9fa7 .elementor-button:hover,
+.elementor-element-4e5183b .elementor-button:hover, .elementor-widget-uael-posts .elementor-button:hover {
+  border-bottom-color: #330662 !important;
+}
+.elementor-element-c5d1b47 .elementor-button:hover *, .elementor-element-852353c .elementor-button:hover *,
+.elementor-element-1ce5bd2 .elementor-button:hover *, .elementor-element-8da2cc5 .elementor-button:hover *,
+.elementor-element-f72f99e .elementor-button:hover *, .elementor-element-70c9fa7 .elementor-button:hover *,
+.elementor-element-4e5183b .elementor-button:hover *, .elementor-widget-uael-posts .elementor-button:hover * {
+  color: #330662 !important;
+  fill: #330662 !important;
+}
+
+/* 3c. Home hero "View our projects" (sample "hero-link"): grey text, turns violet on hover */
+.elementor-element-055d5c7 .elementor-button {
+  color: #404040 !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+.elementor-element-055d5c7 .elementor-button * { color: #404040 !important; fill: #404040 !important; }
+.elementor-element-055d5c7 .elementor-button:hover,
+.elementor-element-055d5c7 .elementor-button:hover * { color: #57068c !important; fill: #57068c !important; }
+
+/* 3d. Links inside page text: violet and underlined, darker once visited (sample) */
+#content .elementor-widget-text-editor a:not(.wp-block-button__link),
+#content .elementor-widget-theme-post-content a:not(.wp-block-button__link) {
+  color: #57068c;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+#content .elementor-widget-text-editor a:not(.wp-block-button__link):hover,
+#content .elementor-widget-theme-post-content a:not(.wp-block-button__link):hover { color: #330662; }
+#content .elementor-widget-text-editor a:not(.wp-block-button__link):visited,
+#content .elementor-widget-theme-post-content a:not(.wp-block-button__link):visited { color: #3b0a63; }
+/* Links that still have the old teal typed straight into the page text */
+a[style*="1ea5af" i] { color: #57068c !important; }
+
+/* 4. Header menu and CONTACT button, as on the sample */
+#masthead .main-header-menu .menu-link {
+  color: #404040 !important;
+  font-weight: 600 !important;
+}
+#masthead .main-header-menu .menu-link:hover,
+#masthead .main-header-menu .current-menu-item > .menu-link {
+  color: #57068c !important;
+}
+@media (min-width: 922px) {
+  #masthead .main-header-menu .menu-link:hover { box-shadow: inset 0 -3px 0 #d6d6d6; }
+  #masthead .main-header-menu .current-menu-item > .menu-link { box-shadow: inset 0 -3px 0 #57068c; }
+}
+@media (max-width: 921px) {
+  #masthead .main-header-menu .current-menu-item > .menu-link { box-shadow: inset 3px 0 0 #57068c; }
+}
 #masthead .ast-custom-button {
   color: #57068c !important;
-  border-color: #57068c !important;
+  background: #ffffff !important;
+  border: 2px solid #57068c !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
 }
 #masthead .ast-custom-button:hover {
-  background-color: #57068c !important;
+  background: #57068c !important;
   color: #ffffff !important;
 }
-#masthead .main-header-menu .current-menu-item > .menu-link,
-#masthead .main-header-menu .menu-link:hover {
-  color: #57068c !important;
-}
-
-/* Sticky header (violet bar after scrolling) keeps white text and a white CONTACT button */
+/* Sticky header (violet bar after scrolling): white menu, white CONTACT button */
 #ast-fixed-header .main-header-menu .menu-link,
+#ast-fixed-header .main-header-menu .menu-link:hover,
 #ast-fixed-header .main-header-menu .current-menu-item > .menu-link {
   color: #ffffff !important;
 }
-#ast-fixed-header .ast-custom-button {
-  color: #330662 !important;
-  background-color: #ffffff !important;
+@media (min-width: 922px) {
+  #ast-fixed-header .main-header-menu .menu-link:hover { box-shadow: inset 0 -3px 0 rgba(255, 255, 255, 0.6); }
+  #ast-fixed-header .main-header-menu .current-menu-item > .menu-link { box-shadow: inset 0 -3px 0 #ffffff; }
+}
+#ast-fixed-header .ast-custom-button,
+#ast-fixed-header .ast-custom-button:hover {
+  color: #57068c !important;
+  background: #ffffff !important;
   border-color: #ffffff !important;
 }
 
-/* 5. Small CHDS dots icon (decorative, on page title bands and above the footer) was green -> NYU violet.
+/* 5. Keyboard focus is always clearly visible (sample) */
+:focus-visible { outline: 3px solid #330662 !important; outline-offset: 2px !important; }
+#ast-fixed-header :focus-visible,
+footer :focus-visible,
+.elementor-location-footer :focus-visible { outline-color: #ffffff !important; }
+
+/* 6. Small CHDS dots icon (decorative, on page title bands and above the footer) was green -> NYU violet.
    The image is moved off screen and an exact violet copy of its shape is drawn in its place. */
 img[src*="/2022/07/cropped-icon"], img[data-src*="/2022/07/cropped-icon"],
 img[src*="/2022/07/icon.png"], img[data-src*="/2022/07/icon.png"] {
@@ -129,7 +225,7 @@ img[src*="/2022/07/icon.png"], img[data-src*="/2022/07/icon.png"] {
   filter: drop-shadow(10000px 0 0 #57068c);
 }
 
-/* 6. Phones: the home hero's half-and-half background looks odd when stacked, so tint it fully */
+/* 7. Phones: the home hero's half-and-half background looks odd when stacked, so tint it fully */
 @media (max-width: 767px) {
   section.elementor-element-cdbd30f {
     background-image: none !important;
