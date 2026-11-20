@@ -46,16 +46,20 @@ section.elementor-element-25e2f0b,
 section.elementor-element-9764818,
 section.elementor-element-ae89c74,
 section.elementor-element-656ff4b1,
-/* Home: About section; Contact: form section; Team: Across NYU and Collaborations rows */
+/* Home: About section; Team: Across NYU and Collaborations rows */
 section.elementor-element-e70a5f3,
-section.elementor-element-f64c5d9,
 section.elementor-element-2976269,
-section.elementor-element-b8e71ac {
+section.elementor-element-b8e71ac,
+/* Contact: the panel behind the form */
+.elementor-column.elementor-element-f64c5d9 > .elementor-widget-wrap {
   background-color: #eee6f3 !important;
 }
 /* Home hero: left panel was mint, now light violet */
 section.elementor-element-cdbd30f {
   background-image: linear-gradient(270deg, #ffffff 40%, #eee6f3 40%) !important;
+}
+section.elementor-element-cdbd30f .elementor-background-overlay {
+  background-color: #57068c !important;
 }
 
 /* 3. Buttons and links: old teal and grey -> NYU violet (teal on white was too faint to read) */
@@ -71,6 +75,22 @@ section.elementor-element-cdbd30f {
 .elementor-button:hover .elementor-button-icon, .elementor-button:hover i {
   color: #330662 !important;
   border-color: #330662 !important;
+}
+
+/* Contact form "Submit" button, block-editor buttons (e.g. "Award Page"),
+   and links that still have the old teal typed straight into the page text */
+.wpforms-submit,
+.wp-block-button__link {
+  color: #57068c !important;
+  border-color: #57068c !important;
+}
+.wpforms-submit:hover,
+.wp-block-button__link:hover {
+  background-color: #57068c !important;
+  color: #ffffff !important;
+}
+a[style*="1ea5af" i] {
+  color: #57068c !important;
 }
 
 /* 4. Header at the top of the page: CONTACT button and current-page menu item */
