@@ -1,0 +1,2326 @@
+/* ===== SHARED PARTS (every page): header, page-title band (Team, News, Contact, Our Work), "Are you a researcher..." band, footer ===== */
+
+/* ---------- A. HEADER (normal, white state) ---------- */
+/* White bar with a grey line under it, on every page (some pages had a see-through header) */
+#masthead > #ast-desktop-header .ast-primary-header-bar,
+#masthead > #ast-mobile-header .ast-primary-header-bar {
+  background: #ffffff !important;
+  border-bottom: 1px solid #d6d6d6 !important;
+}
+/* Header content lines up in a 1120px column, like the sample */
+#masthead .site-primary-header-wrap.ast-container {
+  max-width: 1120px !important;
+  width: calc(100% - 40px) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Header height 84px (was 105px) */
+#masthead .ast-primary-header-bar .site-primary-header-wrap { min-height: 84px !important; }
+/* Logo 290px wide (was 250px) */
+#masthead .site-logo-img .custom-logo-link img {
+  width: 290px !important;
+  max-width: 290px !important;
+  height: auto !important;
+}
+/* CONTACT button: sample size and shape (square corners, 9px/22px padding, 13.6px text) */
+#masthead .ast-header-button-1 .ast-builder-button-wrap .ast-custom-button {
+  display: inline-block !important;
+  padding: 9px 22px !important;
+  font-size: 13.6px !important;
+  line-height: 1.65 !important;
+  border-radius: 0 !important;
+  white-space: nowrap !important;
+}
+
+@media (min-width: 922px) {
+  /* The theme gave each menu item a 105px line height; reset it so the bar can be 84px */
+  #masthead .ast-builder-menu-1 .main-header-menu > .menu-item { line-height: 1.65 !important; }
+  /* Menu links: compact boxes so the violet/grey underline sits just under the word, not at the bottom of the bar */
+  #masthead .ast-builder-menu-1 .main-header-menu > .menu-item > .menu-link {
+    height: auto !important;
+    padding: 8px 10px 11px !important;
+    font-size: 15.2px !important;
+    line-height: 1.65 !important;
+    white-space: nowrap !important;
+  }
+  #masthead .ast-builder-menu-1 .main-header-menu > .menu-item + .menu-item { margin-left: 6px !important; }
+  /* 22px between the menu and the CONTACT button */
+  #masthead .site-header-primary-section-right > .ast-builder-menu-1 { padding-right: 0 !important; }
+  #masthead .site-header-primary-section-right > .ast-header-button-1 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 22px !important;
+  }
+}
+/* Narrow laptops (the desktop menu is still shown here): tighten so everything fits on one line */
+@media (min-width: 922px) and (max-width: 1120px) {
+  #masthead .site-logo-img .custom-logo-link img { width: 210px !important; max-width: 210px !important; }
+  #masthead .ast-builder-menu-1 .main-header-menu > .menu-item > .menu-link { padding: 8px 6px 11px !important; }
+  #masthead .ast-builder-menu-1 .main-header-menu > .menu-item + .menu-item { margin-left: 2px !important; }
+  #masthead .site-header-primary-section-right > .ast-header-button-1 { margin-left: 14px !important; }
+}
+
+/* ---------- B. HEADER after scrolling (violet bar) ---------- */
+#ast-fixed-header .ast-primary-header-bar { border-bottom: 1px solid #57068c !important; }
+#ast-fixed-header .ast-primary-header-bar .site-primary-header-wrap { min-height: 84px !important; }
+/* White logo, sized so it lines up with the colour logo */
+#ast-fixed-header .site-logo-img .sticky-custom-logo img {
+  width: 276px !important;
+  max-width: 276px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 6px 0 8px !important;
+}
+@media (min-width: 922px) and (max-width: 1120px) {
+  #ast-fixed-header .site-logo-img .sticky-custom-logo img {
+    width: 200px !important;
+    max-width: 200px !important;
+    margin: 0 4px 0 6px !important;
+  }
+}
+
+/* ---------- C. HEADER on tablets and phones ---------- */
+@media (max-width: 921px) {
+  #masthead .ast-mobile-header-wrap .ast-primary-header-bar { min-height: 72px !important; }
+  #masthead .site-logo-img .custom-logo-link img { width: 230px !important; max-width: 230px !important; }
+  #ast-fixed-header .site-logo-img .sticky-custom-logo img {
+    width: 219px !important;
+    max-width: 219px !important;
+    margin: 0 5px 0 6px !important;
+  }
+  /* Menu (hamburger) button: violet, 28px icon, no box */
+  #masthead .ast-button-wrap .menu-toggle.main-header-menu-toggle {
+    padding: 10px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+  #masthead [data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg {
+    width: 28px !important;
+    height: 28px !important;
+    fill: #57068c !important;
+  }
+  #ast-fixed-header [data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg {
+    fill: #ffffff !important;
+  }
+  /* Open menu: no divider lines, sample spacing, current page marked by a 3px bar on the left */
+  body.ast-main-header-nav-open #masthead > #ast-mobile-header .ast-primary-header-bar { border-bottom-color: transparent !important; }
+  #masthead > #ast-mobile-header .ast-mobile-header-content { border-bottom: 1px solid #d6d6d6 !important; }
+  #masthead .ast-builder-menu-mobile .main-navigation .main-header-menu { border-top-width: 0 !important; }
+  #masthead .ast-builder-menu-mobile .main-header-menu .menu-item > .menu-link {
+    padding: 8px 20px 8px 33px !important;
+    font-size: 15.2px !important;
+    line-height: 1.65 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  #masthead .ast-builder-menu-mobile .main-header-menu .current-menu-item:not(.menu-item-1315) > .menu-link {
+    background: linear-gradient(#57068c, #57068c) 20px 0 / 3px 100% no-repeat !important;
+  }
+  /* "Contact" at the bottom of the open menu becomes the outlined button, as on the sample */
+  #masthead .ast-builder-menu-mobile .main-header-menu .menu-item.menu-item-1315 > .menu-link {
+    display: block !important;
+    width: auto !important;
+    align-self: stretch !important;
+    text-align: center !important;
+    margin: 8px 20px 14px !important;
+    padding: 9px 22px !important;
+    border: 2px solid #57068c !important;
+    background: #ffffff !important;
+    color: #57068c !important;
+    font-size: 13.6px !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+  #masthead .ast-builder-menu-mobile .main-header-menu .menu-item.menu-item-1315 > .menu-link:hover {
+    background: #57068c !important;
+    color: #ffffff !important;
+  }
+  /* Open menu while scrolled: violet panel (it was white with white text, so unreadable) */
+  #ast-fixed-header .ast-mobile-header-content {
+    background-color: #57068c !important;
+    border-bottom: 0 !important;
+  }
+  #ast-fixed-header .ast-builder-menu-mobile .main-header-menu .current-menu-item:not(.menu-item-1315) > .menu-link {
+    background: linear-gradient(#ffffff, #ffffff) 20px 0 / 3px 100% no-repeat !important;
+  }
+  #masthead #ast-fixed-header .ast-builder-menu-mobile .main-header-menu .menu-item.menu-item-1315 > .menu-link,
+  #masthead #ast-fixed-header .ast-builder-menu-mobile .main-header-menu .menu-item.menu-item-1315 > .menu-link:hover {
+    background: #ffffff !important;
+    color: #57068c !important;
+    border-color: #ffffff !important;
+  }
+}
+@media (max-width: 544px) {
+  /* Remove the -5px offset that pushed the phone header (white and violet) slightly off the screen edges */
+  .ast-header-break-point #masthead .ast-primary-header-bar.main-header-bar { margin: 0 !important; }
+}
+
+/* ---------- D. PAGE-TITLE BAND (Team & Partners, News, Contact, Our Work) ---------- */
+/* Top padding includes the 85px header that sits on top of this band on these four pages */
+section.elementor-element-9764818,
+section.elementor-element-ae89c74,
+section.elementor-element-656ff4b1 {
+  padding: calc(85px + clamp(40px, 6vw, 72px)) 20px clamp(40px, 6vw, 72px) !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+section.elementor-element-9764818 > .elementor-container > .elementor-column > .elementor-element-populated,
+section.elementor-element-ae89c74 > .elementor-container > .elementor-column > .elementor-element-populated,
+section.elementor-element-656ff4b1 > .elementor-container > .elementor-column > .elementor-element-populated {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Short teal bar above the title: 56px x 5px, centred, 22px gap below */
+section.elementor-element-9764818 .elementor-widget-divider,
+section.elementor-element-ae89c74 .elementor-widget-divider,
+section.elementor-element-656ff4b1 .elementor-widget-divider {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 22px !important;
+}
+section.elementor-element-9764818 .elementor-widget-divider > .elementor-widget-container,
+section.elementor-element-ae89c74 .elementor-widget-divider > .elementor-widget-container,
+section.elementor-element-656ff4b1 .elementor-widget-divider > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+section.elementor-element-9764818 .elementor-widget-divider .elementor-divider,
+section.elementor-element-ae89c74 .elementor-widget-divider .elementor-divider,
+section.elementor-element-656ff4b1 .elementor-widget-divider .elementor-divider {
+  padding: 0 !important;
+  text-align: center !important;
+  line-height: 0 !important;
+}
+section.elementor-element-9764818 .elementor-widget-divider .elementor-divider-separator,
+section.elementor-element-ae89c74 .elementor-widget-divider .elementor-divider-separator,
+section.elementor-element-656ff4b1 .elementor-widget-divider .elementor-divider-separator {
+  display: block !important;
+  width: 56px !important;
+  height: 0 !important;
+  margin: 0 auto !important;
+  border: 0 !important;
+  border-top: 5px solid #00a99d !important;
+}
+/* Title */
+section.elementor-element-9764818 .elementor-widget-heading,
+section.elementor-element-ae89c74 .elementor-widget-heading,
+section.elementor-element-656ff4b1 .elementor-widget-heading {
+  width: 100% !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+section.elementor-element-9764818 .elementor-widget-heading > .elementor-widget-container,
+section.elementor-element-ae89c74 .elementor-widget-heading > .elementor-widget-container,
+section.elementor-element-656ff4b1 .elementor-widget-heading > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+section.elementor-element-9764818 h1.elementor-heading-title,
+section.elementor-element-ae89c74 h1.elementor-heading-title,
+section.elementor-element-656ff4b1 h1.elementor-heading-title {
+  font-size: clamp(35.2px, 5vw, 54.4px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: #57068c !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+/* Small dots icon under the title: not on the sample */
+section.elementor-element-9764818 .elementor-widget-image,
+section.elementor-element-ae89c74 .elementor-widget-image,
+section.elementor-element-656ff4b1 .elementor-widget-image {
+  display: none !important;
+}
+@media (max-width: 921px) {
+  section.elementor-element-9764818,
+  section.elementor-element-ae89c74,
+  section.elementor-element-656ff4b1 {
+    padding-top: calc(73px + clamp(40px, 6vw, 72px)) !important;
+  }
+}
+
+/* ---------- E. "ARE YOU A RESEARCHER..." BAND (above the footer, every page) ---------- */
+.elementor-305 .elementor-element.elementor-element-25e2f0b {
+  padding: clamp(40px, 6vw, 80px) 20px calc(clamp(40px, 6vw, 80px) + 17px) !important;
+}
+.elementor-305 .elementor-element.elementor-element-25e2f0b > .elementor-container { max-width: 1120px !important; }
+.elementor-305 .elementor-element.elementor-element-3ea2b56 {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.elementor-305 .elementor-element.elementor-element-014e3c5 > .elementor-element-populated { padding: 0 !important; }
+/* Dots icon above the sentence: not on the sample */
+.elementor-305 .elementor-element.elementor-element-45bb6bc { display: none !important; }
+/* The sentence */
+.elementor-305 .elementor-element.elementor-element-6f86985 { margin: 0 !important; text-align: center !important; }
+.elementor-305 .elementor-element.elementor-element-6f86985 > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+.elementor-305 .elementor-element.elementor-element-6f86985 .elementor-heading-title {
+  font-size: clamp(22.4px, 2.6vw, 30.4px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  color: #57068c !important;
+  max-width: 34ch !important;
+  margin: 0 auto 0.9em !important;
+}
+/* "Contact us" button: give the outlined button its padding back (fixes the 0-padding bug), no arrow */
+.elementor-305 .elementor-element.elementor-element-2b09c86 { margin: 0 !important; }
+.elementor-305 .elementor-element.elementor-element-2b09c86 > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+.elementor-305 .elementor-element.elementor-element-2b09c86 .elementor-button {
+  display: inline-block !important;
+  padding: 9px 22px !important;
+  font-size: 13.6px !important;
+  line-height: 1.65 !important;
+  border-radius: 0 !important;
+  white-space: nowrap !important;
+}
+.elementor-305 .elementor-element.elementor-element-2b09c86 .elementor-button-icon { display: none !important; }
+
+/* ---------- F. FOOTER ---------- */
+.elementor-305 .elementor-element.elementor-element-e4c0e93 {
+  padding: 56px 20px 32px !important;
+  border: 0 !important;
+}
+.elementor-305 .elementor-element.elementor-element-6e0ccc5 { padding: 0 20px 30px !important; }
+.elementor-305 .elementor-element.elementor-element-e4c0e93 > .elementor-container,
+.elementor-305 .elementor-element.elementor-element-6e0ccc5 > .elementor-container { max-width: 1120px !important; }
+.elementor-305 .elementor-element.elementor-element-06071b3 > .elementor-element-populated,
+.elementor-305 .elementor-element.elementor-element-171006e > .elementor-element-populated { padding: 0 !important; }
+/* Logos: centre logo 56px tall, school logo 48px tall, 24px apart */
+.elementor-305 .elementor-element.elementor-element-a6b0b88 { margin: 0 0 24px !important; }
+.elementor-305 .elementor-element.elementor-element-a6b0b88 > .elementor-widget-container { margin: -2px 0 0 !important; padding: 0 !important; }
+.elementor-305 .elementor-element.elementor-element-a6b0b88 img { height: 56px !important; width: auto !important; max-width: 100% !important; }
+.elementor-305 .elementor-element.elementor-element-77580d2 { margin: 0 !important; }
+.elementor-305 .elementor-element.elementor-element-77580d2 img { height: 48px !important; width: auto !important; max-width: 100% !important; }
+/* "Get in touch" */
+.elementor-305 .elementor-element.elementor-element-52dab62 { margin: 0 !important; }
+.elementor-305 .elementor-element.elementor-element-52dab62 > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+.elementor-305 .elementor-element.elementor-element-52dab62 .elementor-heading-title {
+  font-size: 22.4px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  color: #ffffff !important;
+  margin: 0 0 0.6em !important;
+}
+/* Email and address */
+.elementor-305 .elementor-element.elementor-element-02a9940 {
+  margin: 0 !important;
+  font-size: 15.2px !important;
+  line-height: 1.65 !important;
+  color: #ffffff !important;
+}
+.elementor-305 .elementor-element.elementor-element-02a9940 p { margin: 0 0 1em !important; font-size: 15.2px !important; line-height: 1.65 !important; }
+.elementor-305 .elementor-element.elementor-element-02a9940 p:last-child { margin-bottom: 0 !important; }
+/* Bottom line: copyright left, Accessibility right */
+.elementor-305 .elementor-element.elementor-element-d791036 > .elementor-element-populated {
+  margin: 0 !important;
+  --e-column-margin-left: 0px;
+  --e-column-margin-right: 0px;
+  padding: 16px 0 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.elementor-305 .elementor-element.elementor-element-05bc139 { margin: 0 !important; font-size: 15.2px !important; line-height: 1.65 !important; }
+.elementor-305 .elementor-element.elementor-element-05bc139 p {
+  margin: 0 !important;
+  gap: 8px 24px !important;
+  font-size: 15.2px !important;
+  line-height: 1.65 !important;
+}
+@media (max-width: 767px) {
+  /* Stacked footer: 40px between the logos and "Get in touch", everything left-aligned */
+  .elementor-305 .elementor-element.elementor-element-171006e > .elementor-element-populated { padding: 40px 0 0 !important; }
+  .elementor-305 .elementor-element.elementor-element-52dab62,
+  .elementor-305 .elementor-element.elementor-element-02a9940 { text-align: left !important; }
+}
+@media (max-width: 480px) {
+  .elementor-305 .elementor-element.elementor-element-a6b0b88 { margin-bottom: 18px !important; }
+  .elementor-305 .elementor-element.elementor-element-a6b0b88 img { height: 42px !important; }
+  .elementor-305 .elementor-element.elementor-element-77580d2 img { height: 36px !important; }
+}
+
+/* ===== HOME PAGE body (page 1316): hero, About, Our Activities, In the News. Makes them match the sample site. =====
+   Everything below starts with "body.home .elementor-1316", so it cannot touch any other page, the header or the footer.
+   To undo: delete this whole block and click Publish. */
+
+/* H0. Page width (sample: 1120px wide, 20px side gutters), body text 17px / 1.65, and a clean slate for spacing */
+body.home .elementor-1316 > .elementor-top-section { padding-left: 20px !important; padding-right: 20px !important; }
+body.home .elementor-1316 > .elementor-top-section > .elementor-container { max-width: 1120px !important; }
+body.home .elementor-1316 .elementor-widget { margin-bottom: 0 !important; }
+body.home .elementor-1316 .elementor-widget > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body.home .elementor-1316 .elementor-widget-text-editor,
+body.home .elementor-1316 .elementor-widget-text-editor p {
+  font-size: 17px !important; line-height: 1.65 !important; font-weight: 400 !important;
+  letter-spacing: 0 !important; color: #404040 !important;
+}
+body.home .elementor-1316 .elementor-widget-text-editor p { margin: 0 0 1em !important; }
+
+/* H1. HERO */
+body.home .elementor-1316 .elementor-element-cdbd30f > .elementor-container { align-items: center !important; }
+/* teal bar above the headline: 56 x 5px */
+body.home .elementor-1316 .elementor-element-a20bf68 { margin-bottom: 22px !important; }
+body.home .elementor-1316 .elementor-element-a20bf68 .elementor-divider { padding: 0 !important; text-align: left !important; line-height: 0 !important; }
+body.home .elementor-1316 .elementor-element-a20bf68 .elementor-divider-separator {
+  display: block !important; width: 56px !important; margin: 0 !important; border: 0 !important; border-top: 5px solid #00a99d !important;
+}
+body.home .elementor-1316 .elementor-element-760a133 .elementor-heading-title {
+  font-size: clamp(41.6px, 6vw, 73.6px) !important; font-weight: 500 !important; line-height: 1.2 !important;
+  letter-spacing: -0.02em !important; color: #57068c !important; margin: 0 0 0.5em !important;
+}
+body.home .elementor-1316 .elementor-element-d558079,
+body.home .elementor-1316 .elementor-element-d558079 p { font-size: 16.8px !important; }
+body.home .elementor-1316 .elementor-element-d558079 p { max-width: 46ch !important; }
+/* "View our projects" link: 14.4px, arrow after the words */
+body.home .elementor-1316 .elementor-element-055d5c7 { margin-top: 10px !important; }
+body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button { font-size: 14.4px !important; text-decoration: none !important; }
+body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button-content-wrapper { flex-direction: row-reverse !important; gap: 0.4em !important; }
+/* photo: 4:3, rounded corners, no coloured block behind it */
+body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap { background: none !important; }
+body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap > .elementor-background-overlay { display: none !important; }
+body.home .elementor-1316 .elementor-element-abcdd5d img {
+  display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: 4 / 3 !important;
+  object-fit: cover !important; border-radius: 14px !important;
+}
+@media (min-width: 768px) {
+  /* tint covers exactly the left half, as on the sample */
+  body.home .elementor-1316 section.elementor-element-cdbd30f { background-image: linear-gradient(90deg, #eee6f3 50%, #ffffff 50%) !important; }
+  /* text and photo columns are exactly half each, so the text ends where the tint ends */
+  body.home .elementor-1316 .elementor-element-cdbd30f .elementor-element-4ace065,
+  body.home .elementor-1316 .elementor-element-cdbd30f .elementor-element-04914f9 { width: 50% !important; }
+  /* 48px between text and photo */
+  body.home .elementor-1316 .elementor-element-4ace065 > .elementor-widget-wrap { padding-left: 0 !important; padding-right: 24px !important; }
+  body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap { padding-left: 24px !important; padding-right: 0 !important; }
+}
+
+/* H2. ABOUT, OUR ACTIVITIES, IN THE NEWS: section spacing */
+body.home .elementor-1316 > .elementor-element-865b433,
+body.home .elementor-1316 > .elementor-element-e70a5f3,
+body.home .elementor-1316 > .elementor-element-7c0c10d {
+  padding-top: clamp(40px, 6vw, 80px) !important; padding-bottom: clamp(40px, 6vw, 80px) !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.home .elementor-1316 > .elementor-element-865b433,
+body.home .elementor-1316 > .elementor-element-7c0c10d { background: #ffffff !important; }
+body.home .elementor-1316 .elementor-element-865b433 .elementor-widget-wrap,
+body.home .elementor-1316 .elementor-element-e70a5f3 .elementor-widget-wrap,
+body.home .elementor-1316 .elementor-element-7c0c10d .elementor-widget-wrap { padding: 0 !important; }
+body.home .elementor-1316 .elementor-element-865b433 .elementor-inner-section,
+body.home .elementor-1316 .elementor-element-e70a5f3 .elementor-inner-section,
+body.home .elementor-1316 .elementor-element-7c0c10d .elementor-inner-section { margin: 0 !important; padding: 0 !important; }
+
+/* H3. ABOUT */
+body.home .elementor-1316 .elementor-element-a148329 .elementor-heading-title {
+  font-size: 16px !important; font-weight: 600 !important; line-height: 1.2 !important; letter-spacing: 0.04em !important;
+  text-transform: none !important; color: #595959 !important; margin: 0 0 0.4em !important;
+}
+body.home .elementor-1316 .elementor-element-7191e9e .elementor-heading-title {
+  font-size: clamp(24px, 2.6vw, 32px) !important; font-weight: 500 !important; line-height: 1.25 !important;
+  letter-spacing: 0 !important; color: #57068c !important; margin: 0 0 1em !important;
+}
+body.home .elementor-1316 .elementor-element-ebcb662 img {
+  display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; border-radius: 14px !important;
+}
+/* "Learn more" outlined button: gets its padding back (fixes the 0-padding bug in the earlier block) */
+body.home .elementor-1316 .elementor-element-0a195ba .elementor-button {
+  display: inline-block !important; padding: 9px 22px !important; font-size: 13.6px !important;
+  line-height: 1.65 !important; white-space: nowrap !important; border-radius: 0 !important;
+}
+@media (min-width: 768px) {
+  /* sample layout: label and statement run the full width, then photo left / text right with a 48px gap */
+  body.home .elementor-1316 .elementor-element-865b433 > .elementor-container {
+    display: grid !important; grid-template-columns: 1fr 1fr !important; column-gap: 48px !important; row-gap: 0 !important; align-items: start !important;
+  }
+  body.home .elementor-1316 .elementor-element-db386a3,
+  body.home .elementor-1316 .elementor-element-db386a3 > .elementor-widget-wrap { display: contents !important; }
+  body.home .elementor-1316 .elementor-element-a148329 { grid-column: 1 / -1 !important; grid-row: 1 !important; }
+  body.home .elementor-1316 .elementor-element-7191e9e { grid-column: 1 / -1 !important; grid-row: 2 !important; }
+  body.home .elementor-1316 .elementor-element-ebcb662 { grid-column: 1 !important; grid-row: 3 !important; width: 100% !important; max-width: 100% !important; }
+  body.home .elementor-1316 .elementor-element-e35e2f7 { grid-column: 2 !important; grid-row: 3 !important; width: 100% !important; min-width: 0 !important; }
+}
+
+/* H4. Section headings "Our Activities" / "In the News" and their "View all projects" / "View more" links */
+body.home .elementor-1316 .elementor-element-896b37d { display: none !important; } /* small dots icon above "Our Activities": not on the sample */
+/* 26px between the heading row and the cards (written with the parent section so it beats the margin reset in H2) */
+body.home .elementor-1316 .elementor-element-e70a5f3 .elementor-element-7b6e9cb,
+body.home .elementor-1316 .elementor-element-7c0c10d .elementor-element-6919d7e { margin-bottom: 26px !important; }
+body.home .elementor-1316 .elementor-element-7b6e9cb > .elementor-container,
+body.home .elementor-1316 .elementor-element-6919d7e > .elementor-container {
+  display: flex !important; flex-wrap: wrap !important; align-items: baseline !important;
+  justify-content: space-between !important; gap: 20px !important;
+}
+body.home .elementor-1316 .elementor-element-b2d8a7a,
+body.home .elementor-1316 .elementor-element-519a5b3,
+body.home .elementor-1316 .elementor-element-894f2b4,
+body.home .elementor-1316 .elementor-element-b777d6a { width: auto !important; flex: 0 1 auto !important; }
+body.home .elementor-1316 .elementor-element-73c7132 .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-8949ef6 .elementor-heading-title {
+  font-size: clamp(27.2px, 3vw, 36.8px) !important; font-weight: 500 !important; line-height: 1.2 !important;
+  letter-spacing: -0.01em !important; color: #57068c !important; margin: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-c5d1b47 .elementor-button,
+body.home .elementor-1316 .elementor-element-852353c .elementor-button { font-size: 13.6px !important; text-decoration: none !important; }
+
+/* H5. Card grids (Our Activities and In the News): 3 across, 28px gaps, fold to 2 then 1 on narrow screens */
+body.home .elementor-1316 .elementor-element-ea27f0e > .elementor-container,
+body.home .elementor-1316 .elementor-element-14f4a5a > .elementor-container {
+  display: grid !important; grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)) !important; gap: 28px !important;
+}
+body.home .elementor-1316 .elementor-element-feebd2d,
+body.home .elementor-1316 .elementor-element-bc81565,
+body.home .elementor-1316 .elementor-element-7b33ced,
+body.home .elementor-1316 .elementor-element-7a92e59,
+body.home .elementor-1316 .elementor-element-b7e6825,
+body.home .elementor-1316 .elementor-element-a5f3905 { width: 100% !important; min-width: 0 !important; }
+
+/* H6. Our Activities cards */
+body.home .elementor-1316 .elementor-element-c104ac0,
+body.home .elementor-1316 .elementor-element-f42192b,
+body.home .elementor-1316 .elementor-element-7ba5dc1 { margin-bottom: 14px !important; }
+body.home .elementor-1316 .elementor-element-c104ac0 a,
+body.home .elementor-1316 .elementor-element-f42192b a,
+body.home .elementor-1316 .elementor-element-7ba5dc1 a { display: block !important; }
+body.home .elementor-1316 .elementor-element-c104ac0 img,
+body.home .elementor-1316 .elementor-element-f42192b img,
+body.home .elementor-1316 .elementor-element-7ba5dc1 img {
+  display: block !important; width: 100% !important; max-width: 100% !important; height: auto !important; aspect-ratio: 16 / 10 !important;
+  object-fit: cover !important; border-radius: 12px !important;
+}
+body.home .elementor-1316 .elementor-element-f42192b img { object-fit: contain !important; background: #ffffff !important; }
+body.home .elementor-1316 .elementor-element-4ccc243 .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-55b3817 .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-cd444dd .elementor-heading-title,
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-title {
+  font-size: 19.2px !important; font-weight: 600 !important; line-height: 1.2 !important;
+  letter-spacing: 0 !important; color: #57068c !important; margin: 0 0 0.4em !important; padding: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-4ccc243 .elementor-heading-title a,
+body.home .elementor-1316 .elementor-element-55b3817 .elementor-heading-title a,
+body.home .elementor-1316 .elementor-element-cd444dd .elementor-heading-title a,
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-title a {
+  color: #57068c !important; font-weight: 600 !important; text-decoration: none !important;
+}
+body.home .elementor-1316 .elementor-element-4ccc243 .elementor-heading-title a:hover,
+body.home .elementor-1316 .elementor-element-55b3817 .elementor-heading-title a:hover,
+body.home .elementor-1316 .elementor-element-cd444dd .elementor-heading-title a:hover,
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-title a:hover { text-decoration: underline !important; }
+body.home .elementor-1316 .elementor-element-4602516 p,
+body.home .elementor-1316 .elementor-element-c83cc23 p,
+body.home .elementor-1316 .elementor-element-e7e830b p { margin: 0 0 0.6em !important; }
+
+/* H7. In the News cards: logo ABOVE a bold title (was logo to the left of a light title) */
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-wrapper { display: block !important; text-align: left !important; }
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-img {
+  display: block !important; width: auto !important; max-width: none !important; margin: 0 0 12px !important; padding: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-img a { display: block !important; }
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-img img {
+  display: block !important; height: 44px !important; width: auto !important; max-width: 160px !important;
+  object-fit: contain !important; border-radius: 0 !important;
+}
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-content { width: 100% !important; text-align: left !important; }
+body.home .elementor-1316 .elementor-element-14f4a5a .elementor-image-box-description {
+  font-size: 17px !important; line-height: 1.65 !important; font-weight: 400 !important; letter-spacing: 0 !important;
+  color: #404040 !important; margin: 0 0 0.6em !important;
+}
+
+/* H8. "Learn more" / "Read more" under each card: small underlined link, no bar, no icon (sample "learn" link) */
+body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button,
+body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button,
+body.home .elementor-1316 .elementor-element-f72f99e .elementor-button,
+body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button,
+body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button,
+body.home .elementor-1316 .elementor-element-4e5183b .elementor-button {
+  border: 0 !important; padding: 0 !important; font-size: 12.8px !important; line-height: 1.65 !important;
+  text-decoration: underline !important; text-underline-offset: 2px !important;
+}
+body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-f72f99e .elementor-button-text,
+body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button-text,
+body.home .elementor-1316 .elementor-element-4e5183b .elementor-button-text {
+  text-decoration: underline !important; text-underline-offset: 2px !important;
+}
+body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-f72f99e .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button-icon,
+body.home .elementor-1316 .elementor-element-4e5183b .elementor-button-icon { display: none !important; }
+
+/* H9. Phones (Elementor stacks the columns at 767px) */
+@media (max-width: 767px) {
+  /* hero: text first, 48px gap, then the photo; links stay left-aligned as on the sample */
+  body.home .elementor-1316 .elementor-element-4ace065 > .elementor-widget-wrap,
+  body.home .elementor-1316 .elementor-element-04914f9 > .elementor-widget-wrap { padding-left: 0 !important; padding-right: 0 !important; }
+  body.home .elementor-1316 .elementor-element-4ace065 { margin-bottom: 48px !important; }
+  body.home .elementor-1316 .elementor-element-055d5c7,
+  body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-1ce5bd2,
+  body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-8da2cc5,
+  body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-f72f99e,
+  body.home .elementor-1316 .elementor-element-f72f99e .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-f509ab5,
+  body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-70c9fa7,
+  body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button-wrapper,
+  body.home .elementor-1316 .elementor-element-4e5183b,
+  body.home .elementor-1316 .elementor-element-4e5183b .elementor-button-wrapper { text-align: left !important; }
+  body.home .elementor-1316 .elementor-element-055d5c7 .elementor-button,
+  body.home .elementor-1316 .elementor-element-1ce5bd2 .elementor-button,
+  body.home .elementor-1316 .elementor-element-8da2cc5 .elementor-button,
+  body.home .elementor-1316 .elementor-element-f72f99e .elementor-button,
+  body.home .elementor-1316 .elementor-element-f509ab5 .elementor-button,
+  body.home .elementor-1316 .elementor-element-70c9fa7 .elementor-button,
+  body.home .elementor-1316 .elementor-element-4e5183b .elementor-button { width: auto !important; }
+  /* About: photo full width, 48px above the text */
+  body.home .elementor-1316 .elementor-element-ebcb662 { width: 100% !important; max-width: 100% !important; margin-bottom: 48px !important; }
+}
+
+/* ===== Our Work page (page-id-836): filter buttons and project rows, matched to the sample ===== */
+
+/* Section spacing and content width (sample: .section + .wrap = 1120px wide, 20px side gutter, white) */
+body.page-id-836 section.elementor-element-7d4fa72a {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+body.page-id-836 section.elementor-element-7d4fa72a > .elementor-container {
+  max-width: 1120px !important;
+}
+body.page-id-836 section.elementor-element-19c58f2f {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-836 section.elementor-element-19c58f2f > .elementor-container {
+  max-width: 100% !important;
+}
+body.page-id-836 .elementor-element-3a576a29 > .elementor-widget-wrap,
+body.page-id-836 .elementor-element-5973e9e > .elementor-widget-wrap {
+  padding: 0 !important;
+}
+
+/* Filter row (sample .filters): plain text buttons, centred, wrapping, at every screen size */
+body.page-id-836 .elementor-element-481c0fb .uael-post__header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap {
+  margin: 0 0 32px !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 6px 22px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* The phone-only "All" dropdown is replaced by the same wrapping row the sample uses */
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > .uael-filters-dropdown {
+  display: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters > li.uael-post__header-filter {
+  display: block !important;
+  margin: 0 !important;
+  padding: 4px 0 !important;
+  background: none !important;
+  border: 0 !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 15.2px !important;   /* sample .95rem (root 16px) */
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #404040 !important;
+  cursor: pointer !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters > li.uael-post__header-filter:hover {
+  color: #57068c !important;
+  background: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__header-filters-wrap > ul.uael-post__header-filters > li.uael-post__header-filter.uael-filter__current {
+  color: #57068c !important;
+  background: none !important;
+  border-bottom-color: #57068c !important;
+}
+
+/* Project rows (sample .project): image left, text right, thin grey line between rows */
+body.page-id-836 .elementor-element-481c0fb .uael-post-grid__inner {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post-wrapper {
+  width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__bg-wrap {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  border-top: 1px solid #d6d6d6 !important;
+  border-radius: 0 !important;
+  padding: 28px 0 !important;
+  margin: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post-wrapper:first-child .uael-post__bg-wrap {
+  border-top: 0 !important;
+}
+/* Whole-row invisible link removed: only image, title and "Learn more" are links, as on the sample */
+body.page-id-836 .elementor-element-481c0fb .uael-post__complete-box-overlay {
+  display: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__inner-wrap {
+  display: grid !important;
+  grid-template-columns: 1.05fr 1fr !important;
+  gap: 36px !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  transform: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail a {
+  display: block !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 12px !important;
+  transform: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__content-wrap {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  float: none !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  text-align: left !important;
+}
+
+/* Project title (sample h2.h3.big): 24px, semi-bold, violet, underline only on hover */
+body.page-id-836 .elementor-element-481c0fb .uael-post__title {
+  font-size: 24px !important;   /* sample 1.5rem (root 16px) */
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 0 0 0.5em !important;
+  padding: 0 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__title a {
+  color: #57068c !important;
+  font: inherit !important;
+  text-decoration: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__title a:visited {
+  color: #3b0a63 !important;
+}
+body.page-id-836 .elementor-element-481c0fb .uael-post__title a:hover {
+  color: #330662 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+/* Short decorative line under the title: not on the sample */
+body.page-id-836 .elementor-element-481c0fb .uael-post__separator {
+  display: none !important;
+}
+
+/* Description (sample p): 17px, 1.65 line height, grey text */
+body.page-id-836 .elementor-element-481c0fb .uael-post__excerpt {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  margin: 0 0 17px !important;
+  padding: 0 !important;
+}
+
+/* "Learn more" (sample a.learn.more): 13.6px, no arrow, violet bar underneath */
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 0 2px !important;
+  font-size: 13.6px !important;   /* sample .85rem (root 16px); fixed px so phones do not shrink it */
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: #57068c !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 2px solid #57068c !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button .elementor-button-icon {
+  display: none !important;
+}
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button .elementor-button-text {
+  font-size: inherit !important;
+  letter-spacing: inherit !important;
+}
+body.page-id-836 .elementor-element-481c0fb a.uael-post__read-more.elementor-button:hover {
+  color: #330662 !important;
+  background: transparent !important;
+}
+
+/* Phones and small tablets (sample @media max-width 800px): image on top, text below */
+@media (max-width: 800px) {
+  body.page-id-836 .elementor-element-481c0fb .uael-post__inner-wrap {
+    grid-template-columns: 1fr !important;
+  }
+  body.page-id-836 .elementor-element-481c0fb .uael-post__thumbnail,
+  body.page-id-836 .elementor-element-481c0fb .uael-post__content-wrap {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+}
+
+/* ===== Team & Partners page (page-id-481): page body - people grids, Visitors, Affiliates, alumni table, organisation cards ===== */
+
+/* A. Section bands: same white / light-violet alternation and spacing as the sample */
+body.page-id-481 :is(.elementor-element-322efe5, .elementor-element-909e9ba, .elementor-element-2354e7b) {
+  padding: clamp(40px, 6vw, 80px) 20px 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-c947755) {
+  padding: 0 20px clamp(40px, 6vw, 80px) !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 .elementor-element-b86f7ca {
+  padding: 0 20px 36px !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-74a501a, .elementor-element-db7cac6) {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+/* PhD row is followed by the MS row: normal row gap between them */
+body.page-id-481 .elementor-element-74a501a:has(+ .elementor-element-474b090) { padding-bottom: 36px !important; }
+body.page-id-481 :is(.elementor-element-2976269, .elementor-element-b8e71ac, .elementor-element-c0c24ff) {
+  padding: clamp(40px, 6vw, 80px) 20px calc(clamp(40px, 6vw, 80px) - 16px) !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+/* light violet bands: Core Team rows, Alumni, Research and Community Collaborations */
+body.page-id-481 section:is(.elementor-element-74a501a, .elementor-element-474b090, .elementor-element-db7cac6, .elementor-element-b8e71ac) {
+  background-color: #eee6f3 !important; background-image: none !important;
+}
+/* white bands: Director, Visitors, Affiliates, Across NYU (overrides the earlier brand rule that tinted Across NYU), Funding */
+body.page-id-481 section:is(.elementor-element-322efe5, .elementor-element-4c6d4c4, .elementor-element-909e9ba, .elementor-element-4a0c16e, .elementor-element-2354e7b, .elementor-element-b86f7ca, .elementor-element-c947755, .elementor-element-2976269, .elementor-element-c0c24ff) {
+  background-color: #ffffff !important; background-image: none !important;
+}
+/* content width 1120px, as on the sample */
+body.page-id-481 :is(.elementor-element-322efe5, .elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-909e9ba, .elementor-element-4a0c16e, .elementor-element-2354e7b, .elementor-element-b86f7ca, .elementor-element-c947755, .elementor-element-db7cac6, .elementor-element-2976269, .elementor-element-b8e71ac, .elementor-element-c0c24ff) > .elementor-container {
+  max-width: 1120px !important;
+}
+body.page-id-481 :is(.elementor-element-322efe5, .elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-909e9ba, .elementor-element-4a0c16e, .elementor-element-2354e7b, .elementor-element-b86f7ca, .elementor-element-c947755, .elementor-element-db7cac6, .elementor-element-2976269, .elementor-element-b8e71ac, .elementor-element-c0c24ff) > .elementor-container > .elementor-column > .elementor-widget-wrap {
+  padding: 0 !important; margin: 0 !important;
+}
+
+/* A2. Optional "Core Team" heading section. Only takes effect once a section with CSS ID chds-core-team-heading is added in Elementor (see editor steps); harmless until then */
+body.page-id-481 #chds-core-team-heading {
+  background-color: #eee6f3 !important; background-image: none !important;
+  padding: clamp(40px, 6vw, 80px) 20px 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
+}
+body.page-id-481 #chds-core-team-heading > .elementor-container { max-width: 1120px !important; }
+body.page-id-481 #chds-core-team-heading > .elementor-container > .elementor-column > .elementor-widget-wrap { padding: 0 !important; margin: 0 !important; }
+body.page-id-481 #chds-core-team-heading + .elementor-element-74a501a { padding-top: 0 !important; }
+
+/* B. Section headings (sample h2): Team/Director, Visitors, Affiliates, Alumni, Across NYU, Collaborations, Funding */
+body.page-id-481 :is(.elementor-element-7814392, .elementor-element-1f9b1c7, .elementor-element-da729e1, .elementor-element-a4aa113, .elementor-element-0d91d9d, .elementor-element-1634fa7, .elementor-element-4288505) {
+  margin-bottom: 0 !important; text-align: center !important;
+}
+body.page-id-481 :is(.elementor-element-7814392, .elementor-element-1f9b1c7, .elementor-element-da729e1, .elementor-element-a4aa113, .elementor-element-0d91d9d, .elementor-element-1634fa7, .elementor-element-4288505) > .elementor-widget-container {
+  margin: 0 !important; padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7814392, .elementor-element-1f9b1c7, .elementor-element-da729e1, .elementor-element-a4aa113, .elementor-element-0d91d9d, .elementor-element-1634fa7) .elementor-heading-title,
+body.page-id-481 #chds-core-team-heading .elementor-heading-title,
+body.page-id-481 .elementor-element-4288505 :is(h2, h3, h4) {
+  font-size: clamp(27.2px, 3vw, 36.8px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  color: #57068c !important;
+  text-align: center !important;
+  text-transform: none !important;
+  margin: 0 0 0.5em !important;
+  padding: 0 !important;
+}
+
+/* C. People grids (sample "people-grid" / "person"): Director, PhD, MS, Visitors, Affiliates rows */
+body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 36px 28px !important;
+}
+body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container > .elementor-column {
+  width: auto !important;
+  flex: 0 1 300px !important;
+  max-width: 300px !important;
+  min-width: 0 !important;
+}
+body.page-id-481 .elementor-481 .elementor-widget-uael-team-member { margin-bottom: 0 !important; }
+body.page-id-481 .elementor-481 .elementor-widget-uael-team-member > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-481 .uael-team-member,
+body.page-id-481 .elementor-481 .uael-team-member-content { text-align: center !important; }
+/* photo: 150px circle with a thin grey ring */
+body.page-id-481 .elementor-481 .uael-team-member-image { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-481 .uael-team-member-image img {
+  width: 150px !important;
+  height: 150px !important;
+  max-width: 100% !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 1px solid #d6d6d6 !important;
+  display: block !important;
+  margin: 0 auto 12px !important;
+  box-shadow: none !important;
+}
+/* name */
+body.page-id-481 .elementor-481 .uael-team-member-name,
+body.page-id-481 .elementor-481 .uael-team-member-designation,
+body.page-id-481 .elementor-481 .uael-team-member-desc { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-481 .uael-team-name {
+  font-size: 18.4px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #1d1d1d !important;
+  margin: 0 0 0.15em !important;
+  padding: 0 !important;
+}
+/* lines under the name */
+body.page-id-481 .elementor-481 .uael-team-desig,
+body.page-id-481 .elementor-481 .uael-team-desc {
+  font-size: 15.2px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #404040 !important;
+  margin: 0 0 0.2em !important;
+  padding: 0 !important;
+}
+/* role line in semibold (sample ".role"): students and visitors now; the two directors once "Director" / "Associate Director" is moved out of the name field */
+body.page-id-481 :is(.elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e) .uael-team-desig,
+body.page-id-481 .elementor-element-4c6d4c4 .uael-team-member-content:not(:has(.uael-team-name br)) .uael-team-desig {
+  font-weight: 600 !important;
+}
+/* links inside a person card: violet, underlined */
+body.page-id-481 .elementor-481 :is(.uael-team-desig, .uael-team-desc) a { color: #57068c !important; text-decoration: underline !important; text-underline-offset: 2px; overflow-wrap: anywhere; }
+body.page-id-481 .elementor-481 :is(.uael-team-desig, .uael-team-desc) a:visited { color: #3b0a63 !important; }
+body.page-id-481 .elementor-481 :is(.uael-team-desig, .uael-team-desc) a:hover { color: #330662 !important; }
+
+/* D. Alumni table (sample "table.alumni"; keeps the live 3 columns and 12 rows) */
+body.page-id-481 .elementor-element-1587463 { margin-bottom: 0 !important; }
+body.page-id-481 .chds-alumni-wrap { max-width: 760px !important; margin: 0 auto !important; }
+body.page-id-481 table.chds-alumni {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  border: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+}
+body.page-id-481 table.chds-alumni th,
+body.page-id-481 table.chds-alumni td {
+  text-align: left !important;
+  padding: 10px 12px !important;
+  border: 0 !important;
+  border-bottom: 1px solid #d6d6d6 !important;
+  background: transparent !important;
+  vertical-align: middle !important;
+}
+body.page-id-481 table.chds-alumni thead th {
+  color: #57068c !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #57068c !important;
+}
+body.page-id-481 table.chds-alumni tbody tr,
+body.page-id-481 table.chds-alumni tbody tr:nth-child(even) { background: transparent !important; }
+
+/* E. Intro paragraph above "Across NYU" (sample ".intro") */
+body.page-id-481 .elementor-element-935af8f { margin-bottom: 0 !important; }
+body.page-id-481 .elementor-element-935af8f > .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body.page-id-481 .elementor-element-935af8f p {
+  font-size: 17.6px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: center !important;
+  max-width: 70ch !important;
+  margin: 0 auto 36px !important;
+}
+
+/* F. Organisation cards (sample ".orgs" / ".org"): Across NYU, Collaborations, Funding and Support */
+/* the inner rows dissolve so all cards in a group flow together and centre (Funding becomes 4 + 4 + 3 on desktop) */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6),
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) > .elementor-container {
+  display: contents !important;
+}
+body.page-id-481 :is(.elementor-element-82c7484, .elementor-element-5c740fc, .elementor-element-eb47cc8) > .elementor-widget-wrap {
+  justify-content: center !important;
+  align-items: stretch !important;
+}
+/* empty spacer columns in the second Funding row */
+body.page-id-481 :is(.elementor-element-89dce0d, .elementor-element-8709424) { display: none !important; }
+/* one card */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) > .elementor-container > .elementor-column {
+  width: 250px !important;
+  max-width: calc(100% - 16px) !important;
+  flex: 0 0 auto !important;
+  margin: 0 8px 16px !important;
+  padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) > .elementor-container > .elementor-column > .elementor-widget-wrap {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 20px 16px !important;
+  margin: 0 !important;
+  min-height: 150px !important;
+  align-content: flex-start !important;
+  justify-content: center !important;
+}
+/* logo box 190 x 76, logo fitted inside */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image {
+  width: 100% !important;
+  margin: 0 0 12px !important;
+  text-align: center !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image > .elementor-widget-container {
+  margin: 0 !important; padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image a {
+  display: block !important;
+  width: 190px !important;
+  max-width: 100% !important;
+  height: 76px !important;
+  margin: 0 auto !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-image img {
+  width: 190px !important;
+  max-width: 100% !important;
+  height: 76px !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+/* organisation name: semibold violet underlined link */
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor {
+  width: 100% !important;
+  margin: 0 !important;
+  text-align: center !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor > .elementor-widget-container {
+  margin: 0 !important; padding: 0 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor p {
+  margin: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor a {
+  color: #57068c !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor a:visited { color: #3b0a63 !important; }
+body.page-id-481 :is(.elementor-element-7f7b5c1, .elementor-element-0242cd4, .elementor-element-c93ee46, .elementor-element-78fa2c6) .elementor-widget-text-editor a:hover { color: #330662 !important; }
+
+/* G. Small screens: people in one centred column at 800px and below, as on the sample */
+@media (max-width: 800px) {
+  body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+  }
+  body.page-id-481 :is(.elementor-element-4c6d4c4, .elementor-element-74a501a, .elementor-element-474b090, .elementor-element-4a0c16e, .elementor-element-b86f7ca, .elementor-element-c947755) > .elementor-container > .elementor-column {
+    width: 100% !important;
+    flex: 0 0 auto !important;
+  }
+}
+@media (max-width: 600px) {
+  /* alumni table has 3 columns on the live site, so it is tightened slightly on small phones */
+  body.page-id-481 table.chds-alumni { font-size: 15px !important; }
+  body.page-id-481 table.chds-alumni th,
+  body.page-id-481 table.chds-alumni td { padding: 10px 8px !important; }
+}
+
+/* ===== News page (page-id-1503): news cards grid, matched to the sample news.html ===== */
+
+/* Section spacing, width and white background (sample: .section padding, .wrap 1120px with 20px side gutters) */
+body.page-id-1503 section.elementor-element-7e25400 {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  background-color: #ffffff !important;
+}
+body.page-id-1503 section.elementor-element-7e25400 > .elementor-container {
+  max-width: 1120px !important;
+}
+
+/* One even grid for all cards (sample: .cards). The five uneven rows (3, 2, 3, 3, 2) are flattened. */
+body.page-id-1503 .elementor-element-ff7f48a {
+  width: 100% !important;
+}
+body.page-id-1503 .elementor-element-ff7f48a > .elementor-widget-wrap {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)) !important;
+  gap: 28px !important;
+  padding: 0 !important;
+  align-items: start;
+}
+body.page-id-1503 .elementor-element-ff7f48a > .elementor-widget-wrap > .elementor-inner-section,
+body.page-id-1503 .elementor-element-ff7f48a > .elementor-widget-wrap > .elementor-inner-section > .elementor-container {
+  display: contents !important;
+}
+body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column > .elementor-widget-wrap {
+  padding: 0 !important;
+}
+/* The empty spare column at the end of the last row takes no grid cell */
+body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column:has(> .elementor-widget-wrap:not(.elementor-element-populated)) {
+  display: none !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box {
+  margin: 0 !important;
+}
+
+/* Card: logo on top, then title, then text, all left aligned (sample: .news-card) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-wrapper {
+  display: block !important;
+  text-align: left !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img {
+  display: block !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 0 12px 0 !important;
+  text-align: left !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img a {
+  display: block !important;
+  width: fit-content;
+}
+/* Logo: 44px tall, never wider than 160px (sample: .news-card img.logo) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img img {
+  display: block !important;
+  height: 44px !important;
+  width: auto !important;
+  max-width: 160px !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Text block; the space at the bottom holds the "Read more" link */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-content {
+  position: relative !important;
+  width: 100% !important;
+  text-align: left !important;
+  padding: 0 0 38px 0 !important;
+}
+
+/* Title (sample: h2.h3 = 1.3rem of 17px = 22.1px, weight 600) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title {
+  position: static !important;
+  font-size: 22.1px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 0 0 8.84px 0 !important;
+  padding: 0 !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a {
+  position: static !important;
+  color: #57068c !important;
+  text-decoration: none !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a:visited {
+  color: #3b0a63 !important;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a:hover {
+  color: #330662 !important;
+  text-decoration: underline !important;
+}
+
+/* Summary text (sample body: 17px / 1.65, #404040) */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-description {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  color: #404040 !important;
+  margin: 0 !important;
+}
+
+/* "Read more" under each story that has a link (sample: .card .learn = 0.8rem of 17px = 13.6px).
+   It is drawn as part of the title link, so it opens the same article. */
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a::after {
+  content: "Read more";
+  content: "Read more" / "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 13.6px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #57068c;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-title a:hover::after {
+  color: #330662;
+}
+
+/* Phones: keep the same left-aligned card (Elementor centres image boxes below 768px) */
+@media (max-width: 767px) {
+  body.page-id-1503 .elementor-element-ff7f48a .elementor-inner-column {
+    width: auto !important;
+  }
+  body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-wrapper {
+    text-align: left !important;
+  }
+  body.page-id-1503 .elementor-element-7e25400 .elementor-widget-image-box .elementor-image-box-img {
+    margin: 0 0 12px 0 !important;
+  }
+}
+
+/* ===== Student Opportunities page (post 2466): page head with photo, tabs, tab panels, flyers =====
+   Every rule starts with body.postid-2466, so no other page, the header or the footer is affected. */
+
+/* A. Page head: light violet band, photo left (rounded), title right */
+body.postid-2466 .elementor-element-58e1d2e {
+  background-color: #eee6f3 !important;
+  background-image: none !important;
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+}
+body.postid-2466 .elementor-element-58e1d2e > .elementor-container {
+  max-width: 1120px !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 40px !important;
+}
+body.postid-2466 .elementor-element-8182be4 { width: calc((100% - 40px) * 0.5122) !important; }
+body.postid-2466 .elementor-element-9e88383 { width: calc((100% - 40px) * 0.4878) !important; }
+body.postid-2466 .elementor-element-8182be4 > .elementor-widget-wrap,
+body.postid-2466 .elementor-element-9e88383 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.postid-2466 .elementor-element-a615a59,
+body.postid-2466 .elementor-element-3254e27,
+body.postid-2466 .elementor-element-a615a59 > .elementor-widget-container,
+body.postid-2466 .elementor-element-3254e27 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.postid-2466 .elementor-element-a615a59 img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 12px !important;
+}
+body.postid-2466 .elementor-element-3254e27 .elementor-heading-title {
+  font-size: clamp(32px, 4vw, 48px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: #57068c !important;
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+/* B. Body section: white, same 1120px width and spacing as the sample, no extra inner padding */
+body.postid-2466 .elementor-element-135e8cb {
+  background-color: #ffffff !important;
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+}
+body.postid-2466 .elementor-element-135e8cb > .elementor-container { max-width: 1120px !important; }
+body.postid-2466 .elementor-element-36fd8c5 { padding: 0 !important; margin: 0 !important; }
+body.postid-2466 .elementor-element-36fd8c5 > .elementor-container { max-width: none !important; }
+body.postid-2466 .elementor-element-61485e3 > .elementor-widget-wrap,
+body.postid-2466 .elementor-element-aba64ad > .elementor-widget-wrap,
+body.postid-2466 .elementor-element-281b168 > .elementor-widget-container,
+body.postid-2466 .elementor-element-4754a71 > .elementor-widget-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* C. Tabs: remove the Elementor box and lines, then draw the sample ones */
+body.postid-2466 .elementor-element-4754a71 .elementor-tabs-content-wrapper,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content {
+  border: 0 !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title::before,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title::after {
+  display: none !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title {
+  color: #57068c !important;
+  font-size: 16.8px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-align: left !important;
+  white-space: normal !important;
+  cursor: pointer !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-title:hover { text-decoration: underline !important; }
+
+/* Desktop and tablet (Elementor shows the row of tab titles from 768px up) */
+@media (min-width: 768px) {
+  body.postid-2466 .elementor-element-4754a71 .elementor-tabs-wrapper {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0 !important;
+    overflow: visible !important;
+    border-bottom: 1px solid #d6d6d6 !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title {
+    display: block !important;
+    flex: 1 1 auto !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-bottom: 0 !important;
+    margin: 0 0 -1px 0 !important;
+    padding: 22px 26px !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title[aria-selected="true"] {
+    background: #ffffff !important;
+    border-color: #d6d6d6 !important;
+  }
+}
+/* As on the sample below 1000px: tabs become a stacked list, current tab tinted with a violet edge */
+@media (min-width: 768px) and (max-width: 1000px) {
+  body.postid-2466 .elementor-element-4754a71 .elementor-tabs-wrapper {
+    flex-direction: column !important;
+    border-bottom: 0 !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title {
+    border: 1px solid #d6d6d6 !important;
+    margin: -1px 0 0 0 !important;
+    padding: 14px 16px !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-desktop-title[aria-selected="true"] {
+    background: #eee6f3 !important;
+    border-left: 4px solid #57068c !important;
+  }
+}
+/* Phones: Elementor uses its second set of titles; list all six first, then the open panel underneath */
+@media (max-width: 767px) {
+  body.postid-2466 .elementor-element-4754a71 .elementor-tabs-content-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-mobile-title {
+    order: 1;
+    background: transparent !important;
+    border: 1px solid #d6d6d6 !important;
+    margin: -1px 0 0 0 !important;
+    padding: 14px 16px !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-mobile-title[aria-selected="true"] {
+    background: #eee6f3 !important;
+    border-left: 4px solid #57068c !important;
+  }
+  body.postid-2466 .elementor-element-4754a71 .elementor-tab-content { order: 2; }
+}
+
+/* D. Tab panel text: full width, 17.28px (sample 1.08rem), grey #404040 */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content {
+  padding: 28px 0 0 0 !important;
+  max-width: none !important;
+  color: #404040 !important;
+  font-size: 17.28px !important;
+  line-height: 1.65 !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content li,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content div {
+  font-size: 17.28px !important;
+  line-height: 1.65 !important;
+  font-style: normal !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content div[dir] { color: #404040 !important; }
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content span { font-size: inherit !important; }
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p { margin: 0 0 1em 0 !important; }
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content ul {
+  margin: 0 0 1em 0 !important;
+  padding-left: 1.2em !important;
+}
+
+/* E. Section headings inside the panels (sample: 24px, semi-bold, violet).
+      h2 = real headings, once the editor steps are done; h6 = how the GenAI tab is built today. */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content h2,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content h6 {
+  display: block !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 1.6em 0 0.5em 0 !important;
+  padding: 0 !important;
+}
+/* E2. STOPGAP for the first two tabs, where headings are just a bold line today.
+       Delete this E2 block once those lines are real Heading 2 (editor steps). */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > b:only-child,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > strong:only-child,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > span + strong:last-child {
+  display: block !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  color: #57068c !important;
+  margin: 1.6em 0 -0.2em 0 !important;
+}
+/* the stray empty bold line-break after the Internships paragraph */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > strong:has(> br:only-child) { display: none !important; }
+/* the stray blank space sitting in front of the "Internships" bold line */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > span:first-child:has(+ strong:last-child) { display: none !important; }
+
+/* F. Flyers placed inside the text: centred, up to 440px wide, thin grey border */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > a > img,
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content p > img {
+  display: block !important;
+  max-width: min(440px, 100%) !important;
+  height: auto !important;
+  margin: 1.6em auto 1.2em auto !important;
+  border: 1px solid #d6d6d6 !important;
+}
+/* Flyer with a caption (WordPress adds the wp-caption classes once a caption is typed, see editor steps) */
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content .wp-caption {
+  width: auto !important;
+  max-width: min(440px, 100%) !important;
+  margin: 1.6em auto 2.2em auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  text-align: center !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content .wp-caption img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: 1px solid #d6d6d6 !important;
+}
+body.postid-2466 .elementor-element-4754a71 .elementor-tab-content .wp-caption-text {
+  font-size: 15.2px !important;
+  line-height: 1.65 !important;
+  margin: 10px 0 0 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  color: #404040 !important;
+}
+
+/* G. Flyers tab (6th tab): a centred row of 232px flyers, 24px apart */
+body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p {
+  text-align: center !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  margin: 0 auto !important;
+}
+body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > img,
+body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > a > img {
+  display: inline-block !important;
+  vertical-align: top !important;
+  width: min(232px, calc(25% - 24px)) !important;
+  max-width: none !important;
+  height: auto !important;
+  margin: 0 12px 24px 12px !important;
+  border: 1px solid #d6d6d6 !important;
+}
+@media (max-width: 1000px) {
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p { max-width: 520px !important; }
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > img,
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > a > img {
+    width: min(232px, calc(50% - 24px)) !important;
+  }
+}
+@media (max-width: 520px) {
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > img,
+  body.postid-2466 .elementor-element-4754a71 #elementor-tab-content-7476 p > a > img {
+    display: block !important;
+    width: min(232px, 100%) !important;
+    margin: 0 auto 24px auto !important;
+  }
+}
+
+/* H. Phones and small tablets (sample: below 800px the photo sits above the title) */
+@media (max-width: 800px) {
+  body.postid-2466 .elementor-element-58e1d2e > .elementor-container { flex-wrap: wrap !important; }
+  body.postid-2466 .elementor-element-8182be4,
+  body.postid-2466 .elementor-element-9e88383 { width: 100% !important; }
+}
+
+/* ===== Contact page (page-id-533): body = intro text, email, address, form. Matches sample contact.html ===== */
+
+/* Section: same top/bottom space and content width as the sample (.section + .wrap), plain white */
+body.page-id-533 section.elementor-element-7379474 {
+  padding: clamp(40px, 6vw, 80px) 20px !important;
+  margin: 0 !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+/* Two equal columns, 48px apart, both starting at the top (sample .two-col) */
+body.page-id-533 section.elementor-element-7379474 > .elementor-container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 48px !important;
+  align-items: start !important;
+  max-width: 1120px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-column.elementor-element-4e58373,
+body.page-id-533 .elementor-column.elementor-element-f64c5d9 {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-533 .elementor-column.elementor-element-4e58373 > .elementor-widget-wrap,
+body.page-id-533 .elementor-column.elementor-element-f64c5d9 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+  align-content: flex-start !important;
+  align-items: flex-start !important;
+}
+/* The form sits on plain white in the sample: remove the tinted panel behind it.
+   (This overrides the light-violet panel colour set earlier in the brand CSS.) */
+body.page-id-533 .elementor-column.elementor-element-f64c5d9 > .elementor-widget-wrap {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* "Get in touch" heading (sample h2: clamp(1.7rem, 3vw, 2.3rem) with a 16px root) */
+body.page-id-533 .elementor-element-047c166 {
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-047c166 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-047c166 .elementor-heading-title {
+  color: #57068c !important;
+  font-size: clamp(27.2px, 3vw, 36.8px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  text-align: left !important;
+  text-transform: none !important;
+  margin: 0 0 0.5em !important;
+  padding: 0 !important;
+}
+
+/* Intro paragraph (sample body text: 17px / 1.65, #404040) */
+body.page-id-533 .elementor-element-1a64e45 {
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-1a64e45 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-1a64e45,
+body.page-id-533 .elementor-element-1a64e45 p {
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+}
+body.page-id-533 .elementor-element-1a64e45 p {
+  margin: 0 0 1em !important;
+}
+
+/* Email + address block: no inner padding, no icons, plain text as on the sample */
+body.page-id-533 section.elementor-element-d8a5f44 {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 section.elementor-element-d8a5f44 > .elementor-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.page-id-533 .elementor-column.elementor-element-f08db91 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Envelope icon and map-pin icon are not on the sample */
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-icon,
+body.page-id-533 .elementor-element-0c94226 {
+  display: none !important;
+}
+/* Email link: violet, underlined, same size as body text */
+body.page-id-533 .elementor-element-f7bf51f {
+  margin: 0 0 17px !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-f7bf51f > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-items,
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  justify-content: flex-start !important;
+}
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item > a {
+  display: inline !important;
+  width: auto !important;
+  color: #57068c !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: normal !important;
+}
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item > a:hover { color: #330662 !important; }
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-item > a:visited { color: #3b0a63 !important; }
+body.page-id-533 .elementor-element-f7bf51f .elementor-icon-list-text {
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+/* Address: two plain lines under the email */
+body.page-id-533 .elementor-element-cfccac6 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+body.page-id-533 .elementor-element-cfccac6 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body.page-id-533 .elementor-element-cfccac6,
+body.page-id-533 .elementor-element-cfccac6 p {
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.65 !important;
+  text-align: left !important;
+}
+body.page-id-533 .elementor-element-cfccac6 p { margin: 0 !important; }
+/* Thin line under the address is not on the sample */
+body.page-id-533 .elementor-element-c21786f { display: none !important; }
+
+/* Form (sample "Contact" form rules).
+   :not(#wpforms-22-field_4-container) skips WPForms' hidden anti-spam field so it stays hidden. */
+body.page-id-533 .elementor-element-a0522ba {
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.page-id-533 .elementor-element-a0522ba > .elementor-widget-container,
+body.page-id-533 #wpforms-22,
+body.page-id-533 #wpforms-form-22 .wpforms-field-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) {
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+  clear: both !important;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) .wpforms-field-label {
+  display: block !important;
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  margin: 0 0 4px !important;
+  padding: 0 !important;
+}
+/* The * is the same colour and weight as the label on the sample (not red) */
+body.page-id-533 #wpforms-form-22 .wpforms-required-label {
+  color: inherit !important;
+  font-weight: inherit !important;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) input[type="text"],
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) input[type="email"],
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) textarea {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 10px !important;
+  margin: 0 0 16px !important;
+  border: 1px solid #595959 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: #ffffff !important;
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+/* Message box: 6 lines tall, as on the sample (rows="6") */
+body.page-id-533 #wpforms-form-22 .wpforms-field:not(#wpforms-22-field_4-container) textarea {
+  height: calc(6 * 1.65em + 22px) !important;
+  resize: vertical;
+}
+body.page-id-533 #wpforms-form-22 .wpforms-submit-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+/* Submit: sample "form .submit" (17px, roomy padding). Overrides the 0.85rem set earlier */
+body.page-id-533 #wpforms-form-22 button.wpforms-submit {
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 9px 26px !important;
+  margin: 0 !important;
+  background: #ffffff !important;
+  color: #57068c !important;
+  border: 2px solid #57068c !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  cursor: pointer;
+}
+body.page-id-533 #wpforms-form-22 button.wpforms-submit:hover {
+  background: #57068c !important;
+  color: #ffffff !important;
+}
+
+/* Phones and small tablets: one column, form under the text (sample @media max-width: 800px) */
+@media (max-width: 800px) {
+  body.page-id-533 section.elementor-element-7379474 > .elementor-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ===== Single project pages (the six pages opened from Our Work; Elementor single-post template 2029) =====
+   Pages: Structural Factors (2365), New data (2136), Smart Community (2092), NSF CAREER (2077),
+   Social Determinants (2050), NYU-Moi (2019). Every rule below is limited to these six pages.
+   Paste at the very end of Additional CSS. To undo: delete this block and Publish. */
+
+/* P1. Top band: light violet, image left, title right (sample "section tint" + "page-head") */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e {
+  background-color: #eee6f3 !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 80px) 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-135e8cb > .elementor-container {
+  width: min(1120px, calc(100% - 40px)) !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container {
+  gap: 40px !important;
+  align-items: stretch !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 > .elementor-widget-wrap,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 > .elementor-widget-wrap,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-61485e3 > .elementor-widget-wrap {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 > .elementor-widget-wrap,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 > .elementor-widget-wrap {
+  position: relative !important;
+  align-content: center !important;
+  align-items: center !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-a615a59,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-3254e27 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-a615a59 > .elementor-widget-container,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-3254e27 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-a615a59 img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  border-radius: 12px !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-3254e27 .elementor-heading-title {
+  font-size: clamp(32px, 4vw, 48px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  color: #57068c !important;
+  text-align: left !important;
+  text-transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media (min-width: 801px) {
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container { flex-wrap: nowrap !important; }
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 { width: calc((100% - 40px) * 1.05 / 2.05) !important; }
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 { width: calc((100% - 40px) / 2.05) !important; }
+}
+/* Phones and small tablets: image on top, title underneath (the sample switches at 800px) */
+@media (max-width: 800px) {
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e > .elementor-container { flex-wrap: wrap !important; }
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4,
+  body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-9e88383 { width: 100% !important; }
+}
+
+/* P2. "Back to Our Work" link above the image. Only takes effect after the editor step that adds a
+       Text Editor widget with the CSS class "chds-back" to the template (does nothing until then). */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-58e1d2e:has(.chds-back) {
+  padding-top: calc(clamp(40px, 6vw, 80px) + 40px) !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back {
+  position: absolute !important;
+  top: -40px !important;
+  left: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  white-space: nowrap;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back p,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back a {
+  font-size: 15.2px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+  text-align: left !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-8182be4 .chds-back p {
+  margin: 0 !important;
+}
+
+/* P3. Text area: white band, text column 78 characters wide and left-aligned (sample "prose") */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) section.elementor-element-135e8cb {
+  background-color: #ffffff !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 80px) 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-61485e3 { width: 100% !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 { margin: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 > .elementor-widget-container {
+  max-width: 78ch !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: left !important;
+}
+/* Remove the extra padding and width limits of the blocks nested inside the page text */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-section,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con-inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con {
+  --padding-top: 0px; --padding-bottom: 0px; --padding-left: 0px; --padding-right: 0px;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-container,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .e-con-inner {
+  width: 100% !important;
+  max-width: none !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-wrap { padding: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget { margin-bottom: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-container { margin: 0 !important; padding: 0 !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-text-editor {
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: left !important;
+}
+
+/* P4. Body text: 17px, line height 1.65, grey #404040, one line of space between paragraphs */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li {
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040 !important;
+  text-align: left !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p { margin: 0 0 1em !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p:empty { display: none !important; }
+/* Text sizes typed straight into the page (16px, 1rem, 1.5rem) follow the paragraph or heading instead */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p span,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p a,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p i,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 p em,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li span,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li a,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 :is(h2, h3, h4) span {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 ul,
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 ol {
+  margin: 1em 0 !important;
+  padding-left: 1.2em !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 ul { list-style: disc outside !important; }
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 li { margin: 0 !important; }
+/* Structural Factors page only: hide a stray blank line (an empty block pasted in after the last paper) */
+body.postid-2365 .elementor-element-dbe8f43 div[style*="margin-left"] { display: none !important; }
+
+/* P5. Section headings "Relevant Papers", "Funders", "Students" and so on (sample ".prose h2": 1.5rem = 24px) */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 :is(h2, h3, h4) {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  color: #57068c !important;
+  text-align: left !important;
+  text-transform: none !important;
+  margin: 1.6em 0 0.5em !important;
+  padding: 0 !important;
+}
+/* Structural Factors page only: its headings are separate Elementor heading widgets, so the
+   paragraph space above them (17px) is taken off to keep the same gap as the sample */
+body.postid-2365 .elementor-element-281b168 .elementor-widget-heading .elementor-heading-title {
+  margin-top: calc(1.6em - 17px) !important;
+}
+
+/* P6. Funder logos: at most 130px tall, natural proportions, side by side from the left (sample ".funders img") */
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 img {
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 130px !important;
+  margin: 0 20px 14px 0 !important;
+  vertical-align: middle !important;
+  border-radius: 0 !important;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 figure {
+  display: inline-block !important;
+  margin: 0 !important;
+  vertical-align: middle;
+}
+body:is(.postid-2365, .postid-2136, .postid-2092, .postid-2077, .postid-2050, .postid-2019) .elementor-element-281b168 .elementor-widget-image {
+  width: auto !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+/* Social Determinants: the two logos sit next to each other instead of in two half-width columns */
+body.postid-2050 section.elementor-element-b0f36cc > .elementor-container {
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+body.postid-2050 .elementor-element-9a3c6f4,
+body.postid-2050 .elementor-element-1a5e0a4 {
+  width: auto !important;
+  max-width: 100% !important;
+}
+/* New data: the two logos (Facebook, NSF) sit next to each other */
+body.postid-2136 .elementor-element-f2fb37b .wp-block-columns {
+  display: block !important;
+  margin: 0 !important;
+}
+body.postid-2136 .elementor-element-f2fb37b .wp-block-column {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle;
+}
+/* New data: "Award Page" is an ordinary text link on the sample, not a button */
+body.postid-2136 .elementor-element-f2fb37b .wp-block-buttons {
+  display: block !important;
+  margin: 0 0 1em !important;
+}
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button { display: inline !important; margin: 0 !important; }
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link,
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link:hover,
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link:focus {
+  display: inline !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #57068c !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body.postid-2136 .elementor-element-f2fb37b .wp-block-button__link:hover { color: #330662 !important; }
+
+/* P7. NYU-Moi: the three links at the bottom become a bulleted list (sample "Related links" list).
+       The links themselves are not changed: they stay on nyu-moi-dssd.squarespace.com for now. */
+body.postid-2019 .elementor-element-4bb68700 .wp-block-buttons-is-layout-flex {
+  display: block !important;
+  margin: 1em 0 !important;
+  padding: 0 0 0 1.2em !important;
+  gap: 0 !important;
+}
+body.postid-2019 .elementor-element-4bb68700 .wp-block-buttons-is-layout-flex > p { display: none !important; }
+body.postid-2019 .elementor-element-4bb68700 .wp-block-buttons-is-layout-flex > div {
+  display: list-item !important;
+  list-style: disc outside !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: #404040;
+  text-align: left !important;
+}
+
+/* ===== Activity listing pages: Building Capacity (page 2056), Public Health Best Practices (page 2064), Valuing Diverse Stakeholder Collaborations (page 2066, incl. its page 2) =====
+   The three pages are copies of each other, so they share the same Elementor block IDs
+   (title section fc783d3 / column 08d0216 / heading 8b04647, list section 833ef18 / column 71fcc77 / posts widget 18d5790).
+   Every rule is locked to these three page IDs, so no other page, and no header or footer, is touched. */
+
+/* --- 1. Page title band (sample ".page-title"): light violet, centred, teal bar above the title --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-fc783d3 {
+  background-color: #eee6f3 !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 72px) 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-fc783d3 > .elementor-container,
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-833ef18 > .elementor-container {
+  max-width: min(1120px, calc(100% - 40px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-08d0216 > .elementor-widget-wrap,
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-71fcc77 > .elementor-widget-wrap {
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 {
+  margin: 0 !important;
+  text-align: center !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 > .elementor-widget-container::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 5px;
+  background: #00a99d;
+  margin: 0 auto 22px;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-8b04647 .elementor-heading-title {
+  color: #57068c !important;
+  font-size: clamp(37.4px, 5vw, 57.8px) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  text-transform: none !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- 2. List section (sample ".section" + ".wrap"): white, sample spacing --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) section.elementor-element-833ef18 {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: clamp(40px, 6vw, 80px) 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790,
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 > .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post-grid__inner {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- 3. Each project row (sample ".project"): picture left, text right, thin grey line between rows --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post-wrapper {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 28px 0 !important;
+  border-top: 1px solid #d6d6d6 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post-wrapper:first-child {
+  border-top: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__bg-wrap {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* The invisible "whole box is a link" layer: removed so that only the picture, the title and "Learn more" are links (as on the sample) */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__complete-box-overlay {
+  display: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__inner-wrap {
+  display: grid !important;
+  grid-template-columns: 1.05fr 1fr !important;
+  gap: 36px !important;
+  align-items: center !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__thumbnail {
+  position: static !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__thumbnail a {
+  display: block !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__thumbnail img {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: fill !important;
+  border-radius: 12px !important;
+  opacity: 1 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__content-wrap {
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  background: transparent !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__separator {
+  display: none !important;
+}
+
+/* --- 4. Row text (sample "h2.h3", paragraph and ".more" link) --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title {
+  color: #57068c !important;
+  font-size: 22.1px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-align: left !important;
+  margin: 0 0 11px !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title a {
+  color: #57068c !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+  text-decoration: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title a:visited {
+  color: #3b0a63 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__title a:hover {
+  color: #330662 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__excerpt {
+  color: #404040 !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  text-align: left !important;
+  margin: 0 0 17px !important;
+  padding: 0 !important;
+}
+/* "Learn more": the brand CSS already makes it violet, uppercase, with the violet bar underneath. Here: sample size, no arrow, left aligned */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__read-more.elementor-button {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 0 2px !important;
+  font-size: 14.45px !important;
+  line-height: 1.3 !important;
+  text-decoration: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__read-more .elementor-button-icon {
+  display: none !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__read-more .elementor-button-text {
+  font-size: 14.45px !important;
+  line-height: 1.3 !important;
+}
+
+/* --- 5. Page numbers under the list (Stakeholders only; sample ".back" line): centred, plain violet links --- */
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__footer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination {
+  text-align: center !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+  font-size: 16.15px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination .page-numbers {
+  display: inline-block !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 5px !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #57068c !important;
+  font-family: "Inter", Arial, sans-serif !important;
+  font-size: 16.15px !important;
+  font-weight: 600 !important;
+  line-height: 1.65 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination a.page-numbers {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination a.page-numbers:hover {
+  color: #330662 !important;
+}
+body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-grid-pagination .page-numbers.current {
+  color: #404040 !important;
+  text-decoration: none !important;
+}
+
+/* --- 6. Phones and small tablets (sample: max-width 800px): picture on top, text underneath --- */
+@media (max-width: 800px) {
+  body:is(.page-id-2056, .page-id-2064, .page-id-2066) .elementor-element-18d5790 .uael-post__inner-wrap {
+    grid-template-columns: 1fr !important;
+  }
+}
