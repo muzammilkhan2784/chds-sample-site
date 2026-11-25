@@ -7,9 +7,9 @@ body .dssd-wp img { max-width: 100%; height: auto; }
 body .dssd-wp a { color: #57068c; text-decoration: underline; text-underline-offset: 2px; }
 body .dssd-wp a:hover { color: #330662; }
 body .dssd-wp h1, body .dssd-wp h2, body .dssd-wp h3, body .dssd-wp h4 { color: #57068c; line-height: 1.2; margin: 0 0 .5em; font-weight: 600; font-family: "Inter", Arial, sans-serif; }
-body .dssd-wp h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); letter-spacing: -.02em; font-weight: 500; }
-body .dssd-wp h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 500; letter-spacing: -.01em; }
-body .dssd-wp h3 { font-size: 1.3rem; font-weight: 500; }
+body .dssd-wp h1 { font-size: clamp(35.2px, 5vw, 54.4px); letter-spacing: -.02em; font-weight: 500; }
+body .dssd-wp h2 { font-size: clamp(27.2px, 3vw, 36.8px); font-weight: 500; letter-spacing: -.01em; }
+body .dssd-wp h3 { font-size: 20.8px; font-weight: 500; }
 body .dssd-wp p { margin: 0 0 1em; }
 body .dssd-wp ul { margin: 0 0 1em; }
 body .dssd-wp a:visited:not(.btn-outline):not(.learn):not([aria-current="page"]) { color: #3b0a63; }
@@ -18,7 +18,7 @@ body .dssd-wp .dssd-nav a[aria-current="page"], body .dssd-wp .dssd-nav a[aria-c
 body .dssd-wp .btn-outline, body .dssd-wp .btn-outline:visited { text-decoration: none; }
 body .dssd-wp .btn-outline:hover { color: #fff; }
 body .dssd-wp .wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
-body .dssd-wp .btn-outline { display: inline-block; border: 2px solid #57068c; color: #57068c; background: #fff; padding: 9px 22px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; text-decoration: none; white-space: nowrap; }
+body .dssd-wp .btn-outline { display: inline-block; border: 2px solid #57068c; color: #57068c; background: #fff; padding: 9px 22px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13.6px; text-decoration: none; white-space: nowrap; }
 body .dssd-wp .btn-outline:hover { background: #57068c; color: #fff; }
 @media (max-width: 1120px) {
   body .dssd-wp .btn-outline { text-align: center; }
@@ -36,21 +36,21 @@ body .dssd-wp .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48p
 body .dssd-wp .cards { display: grid; gap: 28px; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
 body .dssd-wp .card img.cover { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 12px; margin-bottom: 14px; display: block; }
 body .dssd-wp .card img.cover.fit { object-fit: contain; background: #fff; }
-body .dssd-wp .card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: .4em; }
+body .dssd-wp .card h3 { font-size: 19.2px; font-weight: 600; margin-bottom: .4em; }
 body .dssd-wp .card h3 a { color: #57068c; text-decoration: none; }
 body .dssd-wp .card h3 a:hover { text-decoration: underline; }
 body .dssd-wp .card p { margin-bottom: .6em; }
-body .dssd-wp .card .learn { font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+body .dssd-wp .card .learn { font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 12.8px; }
 body .dssd-wp .prose { max-width: 78ch; }
-body .dssd-wp .prose h2 { font-size: 1.5rem; font-weight: 600; margin-top: 1.6em; }
+body .dssd-wp .prose h2 { font-size: 24px; font-weight: 600; margin-top: 1.6em; }
 body .dssd-wp .prose .funders img { max-height: 130px; max-width: 100%; width: auto; display: inline-block; margin: 0 20px 14px 0; vertical-align: middle; }
-body .dssd-wp .back { font-weight: 600; font-size: .95rem; }
+body .dssd-wp .back { font-weight: 600; font-size: 15.2px; }
 body .dssd-wp .people-grid { display: grid; gap: 36px 28px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); justify-items: center; }
 body .dssd-wp .people-grid.two { grid-template-columns: repeat(2, minmax(220px, 300px)); justify-content: center; }
 body .dssd-wp .person { text-align: center; max-width: 300px; }
 body .dssd-wp .person img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 12px; border: 1px solid #d6d6d6; display: block; }
-body .dssd-wp .person h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: .15em; color: #1d1d1d; }
-body .dssd-wp .person p { margin: 0 0 .2em; font-size: .95rem; }
+body .dssd-wp .person h3 { font-size: 18.4px; font-weight: 600; margin-bottom: .15em; color: #1d1d1d; }
+body .dssd-wp .person p { margin: 0 0 .2em; font-size: 15.2px; }
 body .dssd-wp .person .role { font-weight: 600; }
 @media (max-width: 800px) {
   body .dssd-wp .two-col { grid-template-columns: 1fr; }
@@ -64,17 +64,17 @@ body .dssd-wp .people-grid.three { grid-template-columns: repeat(3, minmax(180px
 @media (max-width: 800px) {
   body .dssd-wp .people-grid.three { grid-template-columns: 1fr; }
 }
-body .dssd-wp .person .avatar { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 12px; border: 1px solid #d6d6d6; background: #f4eef8; color: #57068c; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; font-weight: 600; }
-body .dssd-wp .archive-tag { display: inline-block; margin: 0 0 12px; padding: 4px 12px; border-radius: 999px; background: #eee6f3; color: #57068c; font-weight: 600; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; }
+body .dssd-wp .person .avatar { width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 12px; border: 1px solid #d6d6d6; background: #f4eef8; color: #57068c; display: flex; align-items: center; justify-content: center; font-size: 38.4px; font-weight: 600; }
+body .dssd-wp .archive-tag { display: inline-block; margin: 0 0 12px; padding: 4px 12px; border-radius: 999px; background: #eee6f3; color: #57068c; font-weight: 600; font-size: 13.1px; letter-spacing: .04em; text-transform: uppercase; }
 body .dssd-wp .dssd-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 10px; padding: 0; margin: 0 0 20px; }
-body .dssd-wp .dssd-nav a { display: block; padding: 8px 16px; border: 1px solid #d6d6d6; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: .95rem; color: #57068c; background: #fff; }
+body .dssd-wp .dssd-nav a { display: block; padding: 8px 16px; border: 1px solid #d6d6d6; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 15.2px; color: #57068c; background: #fff; }
 body .dssd-wp .dssd-nav a:hover { background: #eee6f3; }
 body .dssd-wp .dssd-nav a[aria-current="page"] { background: #57068c; color: #fff; border-color: #57068c; }
-body .dssd-wp .dssd-h2 { font-size: 1.5rem; font-weight: 600; margin: 2em 0 .8em; }
+body .dssd-wp .dssd-h2 { font-size: 24px; font-weight: 600; margin: 2em 0 .8em; }
 body .dssd-wp .dssd-intro { gap: 40px; align-items: start; }
 body .dssd-wp .dssd-photo { margin: 0; }
 body .dssd-wp .dssd-photo img { width: 100%; height: auto; border-radius: 12px; display: block; }
-body .dssd-wp .dssd-photo figcaption { font-size: .9rem; color: #555; margin-top: 8px; }
+body .dssd-wp .dssd-photo figcaption { font-size: 14.4px; color: #555; margin-top: 8px; }
 body .dssd-wp .embed { position: relative; aspect-ratio: 16 / 9; max-width: 820px; border-radius: 12px; overflow: hidden; background: #000; }
 body .dssd-wp .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 body .dssd-wp .embed.map { aspect-ratio: 4 / 3; background: #fff; border: 1px solid #d6d6d6; margin-bottom: 24px; }
@@ -83,20 +83,20 @@ body .dssd-wp .partner-logos li { background: #fff; border: 1px solid #d6d6d6; b
 body .dssd-wp .partner-logos img { max-width: 100%; max-height: 84px; width: auto; height: auto; object-fit: contain; display: block; }
 body .dssd-wp .dssd-people.people-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); align-items: start; }
 body .dssd-wp .dssd-people .person img { width: 130px; height: 130px; }
-body .dssd-wp .dssd-people .person h3 { font-size: 1.05rem; }
-body .dssd-wp .dssd-people .person .role { font-weight: 400; font-size: .9rem; color: #444; }
+body .dssd-wp .dssd-people .person h3 { font-size: 16.8px; }
+body .dssd-wp .dssd-people .person .role { font-weight: 400; font-size: 14.4px; color: #444; }
 body .dssd-wp .dssd-cards .card h3 { margin-top: 0; }
 body .dssd-wp .photo-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 28px 0; }
 body .dssd-wp .photo-row img { flex: 1 1 280px; min-width: 0; max-width: 480px; max-height: 420px; width: 100%; object-fit: cover; border-radius: 12px; }
 body .dssd-wp .gallery { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
 body .dssd-wp .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; display: block; }
 body .dssd-wp .members { list-style: none; padding: 0; margin: 0; display: grid; gap: 20px 28px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-body .dssd-wp .members h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .3em; }
+body .dssd-wp .members h3 { font-size: 16.8px; font-weight: 600; margin: 0 0 .3em; }
 body .dssd-wp .members ul { padding-left: 1.1em; margin: 0; }
 body .dssd-wp .trainees { display: grid; gap: 40px; max-width: 900px; }
 body .dssd-wp .trainee { display: grid; grid-template-columns: 170px 1fr; gap: 28px; align-items: start; }
 body .dssd-wp .trainee img { width: 170px; height: 170px; object-fit: cover; border-radius: 50%; border: 1px solid #d6d6d6; }
-body .dssd-wp .trainee h2 { font-size: 1.35rem; margin: 0 0 .1em; }
+body .dssd-wp .trainee h2 { font-size: 21.6px; margin: 0 0 .1em; }
 body .dssd-wp .trainee .role { font-weight: 600; color: #57068c; margin: 0 0 .6em; }
 @media (max-width: 720px) {
   body .dssd-wp .trainee { grid-template-columns: 1fr; justify-items: start; }
@@ -108,12 +108,12 @@ body .dssd-wp .dssd-people.people-grid { display: flex; flex-wrap: wrap; justify
 body .dssd-wp .dssd-people .person { flex: 0 1 200px; }
 body .dssd-wp .dssd-h2.dssd-first { margin-top: .4em; }
 body .dssd-wp .dssd-wide p { max-width: none; }
-body .dssd-wp .dssd-wide h3 { font-size: 1.1rem; font-weight: 600; margin: 1.2em 0 .2em; color: #1d1d1d; }
+body .dssd-wp .dssd-wide h3 { font-size: 17.6px; font-weight: 600; margin: 1.2em 0 .2em; color: #1d1d1d; }
 body .dssd-wp .partner-logos { display: flex; flex-wrap: wrap; justify-content: center; }
 body .dssd-wp .partner-logos li { flex: 0 1 160px; }
 body .dssd-wp .dssd-nav a[aria-current="page"]:hover, body .dssd-wp .dssd-nav a[aria-current="page"]:focus, body .dssd-wp .dssd-nav a[aria-current="page"]:active { background: #330662; color: #fff; border-color: #330662; }
 body .dssd-wp .dssd-nav a:not([aria-current]):active { background: #eee6f3; color: #57068c; }
-body .dssd-wp .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 0; padding: 0; margin: 0 0 14px; font-size: .9rem; }
+body .dssd-wp .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 0; padding: 0; margin: 0 0 14px; font-size: 14.4px; }
 body .dssd-wp .crumbs li + li::before { content: "\203A"; margin: 0 8px; color: #6b6b6b; }
 body .dssd-wp .crumbs a { color: #57068c; }
 body .dssd-wp .crumbs [aria-current="page"] { color: #404040; }
@@ -123,10 +123,10 @@ body .dssd-wp .photo-row.wide img { width: 100%; height: auto; border-radius: 12
 /* Our Work: the archive card under the project list */
 body .dssd-wp.dssd-card { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; padding: 28px 0; border-top: 1px solid #d6d6d6; }
 body .dssd-wp.dssd-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 12px; display: block; }
-body .dssd-wp.dssd-card h2 { font-size: 1.6rem; font-weight: 600; margin: 0 0 .4em; }
+body .dssd-wp.dssd-card h2 { font-size: 25.6px; font-weight: 600; margin: 0 0 .4em; }
 body .dssd-wp.dssd-card h2 a { color: #57068c; text-decoration: none; }
 body .dssd-wp.dssd-card h2 a:hover { text-decoration: underline; }
-body .dssd-wp.dssd-card .learn, body .dssd-wp.dssd-card .learn:visited { display: inline-block; color: #57068c; text-decoration: none; border-bottom: 2px solid #57068c; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; padding-bottom: 2px; }
+body .dssd-wp.dssd-card .learn, body .dssd-wp.dssd-card .learn:visited { display: inline-block; color: #57068c; text-decoration: none; border-bottom: 2px solid #57068c; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13.6px; padding-bottom: 2px; }
 body .dssd-wp.dssd-card .learn:hover { color: #330662; border-bottom-color: #330662; }
 @media (max-width: 767px) { body .dssd-wp.dssd-card { grid-template-columns: 1fr; gap: 18px; } }
 /* NYU-Moi project page: the archive callout */
@@ -134,3 +134,7 @@ body .dssd-wp.dssd-callout { margin: 0 0 2em; padding: 20px 24px; background: #e
 body .dssd-wp.dssd-callout p { margin: 0 0 .8em; }
 body .dssd-wp.dssd-callout p:last-child { margin-bottom: 0; }
 body .dssd-wp.dssd-callout .archive-tag { background: #fff; }
+
+/* The site header sits over the top of each page, so the title band leaves room for it (same as the other title bands) */
+body .dssd-wp .page-title { padding: 121px 0 56px; }
+@media (max-width: 921px) { body .dssd-wp .page-title { padding: 110px 0 44px; } }
