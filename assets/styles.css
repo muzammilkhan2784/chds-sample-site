@@ -288,3 +288,19 @@ table.alumni th { color: var(--violet); border-bottom: 2px solid var(--violet); 
 /* current-page pill keeps its colours on hover and click */
 .dssd-nav a[aria-current="page"]:hover, .dssd-nav a[aria-current="page"]:focus, .dssd-nav a[aria-current="page"]:active { background: var(--deep); color: #fff; border-color: var(--deep); }
 .dssd-nav a:not([aria-current]):active { background: var(--light-violet); color: var(--violet); }
+
+/* Nov 25: DSSD archive inside Our Work, alumni list tighter */
+.crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 0; padding: 0; margin: 0 0 14px; font-size: .9rem; }
+.crumbs li + li::before { content: "\203A"; margin: 0 8px; color: #6b6b6b; }
+.crumbs a { color: var(--violet); }
+.crumbs [aria-current="page"] { color: #404040; }
+.visitor-list { columns: 2 260px; }
+.photo-row.wide img { width: 100%; height: auto; border-radius: 12px; }
+table.alumni.no-lines th, table.alumni.no-lines td { border-bottom: 0; padding: 6px 12px; }
+table.alumni.no-lines th { border-bottom: 2px solid var(--violet); padding-bottom: 8px; }
+.alumni-note { text-align: center; margin: 18px auto 0; max-width: 760px; }
+@media (max-width: 600px) {
+  table.alumni.no-lines { font-size: .88rem; }
+  table.alumni.no-lines th, table.alumni.no-lines td { padding: 5px 6px; }
+}
+@media (max-width: 400px) { table.alumni.no-lines th, table.alumni.no-lines td { padding: 5px 3px; overflow-wrap: anywhere; } }
