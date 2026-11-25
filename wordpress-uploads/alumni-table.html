@@ -1,12 +1,14 @@
 <style>
 .chds-alumni-wrap { max-width: 900px; margin: 0 auto; overflow-x: auto; }
-.chds-alumni { width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.5; }
-.chds-alumni th, .chds-alumni td { text-align: left; padding: 12px 16px; border-bottom: 1px solid #e3dcea; vertical-align: top; }
-.chds-alumni thead th { background: #57068c; color: #fff; font-weight: 600; }
-.chds-alumni tbody tr:nth-child(even) { background: #f7f3fa; }
+.chds-alumni { width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.4; }
+.chds-alumni th, .chds-alumni td { text-align: left; padding: 6px 16px; border: 0; vertical-align: top; }
+.chds-alumni thead th { background: #57068c; color: #fff; font-weight: 600; padding-top: 10px; padding-bottom: 10px; }
+.chds-alumni tbody tr:first-child td { padding-top: 12px; }
+.chds-alumni-note { text-align: center; margin: 18px 0 0; font-size: 16px; color: #404040; }
+.chds-alumni-note a { color: #57068c; text-decoration: underline; }
 @media (max-width: 600px) {
   .chds-alumni { font-size: 14px; }
-  .chds-alumni th, .chds-alumni td { padding: 10px 8px; }
+  .chds-alumni th, .chds-alumni td { padding: 5px 6px; }
 }
 </style>
 <div class="chds-alumni-wrap">
@@ -30,3 +32,4 @@
 </tbody>
 </table>
 </div>
+<p class="chds-alumni-note">Are you a Center alum with news to share? Please <a href="mailto:healthdatasci@nyu.edu">contact us</a> with any updates.</p>
