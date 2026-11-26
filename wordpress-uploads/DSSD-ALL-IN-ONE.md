@@ -1,4 +1,4 @@
-# DSSD program archive on the live site (Steps 26-32) - ALL-IN-ONE
+# DSSD program archive on the live site (Steps 26-33) - ALL-IN-ONE
 
 This one file has every step **and the full code of every file to paste** (at the bottom, in the Appendix).
 The only thing not inside it is the images: download the zip from the link below (or use DSSD-WordPress-Package.zip, which has everything).
@@ -122,6 +122,32 @@ These are the same as Step 28, except **Parent = DSSD Program Archive**, not Our
    - phone and desktop layout, headings and contrast.
 
 **To undo anything:** delete the page, or remove the CSS block from Additional CSS. The Squarespace site is untouched.
+
+---
+
+## Step 33: Fixes found in the live check (video, map, phone button)
+
+**33a. Video and map not showing.** SiteGround's lazy-loading holds back the embedded video (archive home) and the data-index map (Community of Practice), so they stay as an empty black or white box. Add one line to each of those two pages:
+1. Open **https://healthdatasci.org/work/dssd/** and click **Edit with Elementor**. Click the HTML widget.
+2. In **HTML Code**, press **Ctrl + End** to go to the very end, after the last `</div>`. Press **Enter** and paste this line exactly:
+   ```html
+   <script>document.querySelectorAll('.dssd-wp iframe[data-src]').forEach(function(f){if(!f.getAttribute('src')){f.src=f.getAttribute('data-src');}});</script>
+   ```
+3. Click **Update**.
+4. Do the same on **https://healthdatasci.org/work/dssd/community-of-practice/**.
+
+(The updated `01-dssd.html` and `09-community-of-practice.html` already include this line, so re-pasting either whole file does the same thing.)
+
+**33b. Button running off the screen on phones.** On the NYU-Moi page, the "Visit the DSSD program archive" button is wider than a phone screen.
+1. **Appearance, Customize, Additional CSS.** Press **Ctrl + End**, then **Enter**.
+2. Paste:
+   ```css
+   /* DSSD: long button text wraps on phones instead of running off the screen */
+   body .dssd-wp .btn-outline { white-space: normal; max-width: 100%; text-align: center; }
+   ```
+3. Click **Publish**.
+
+Then click **Purge SG Cache** and tell me "check".
 
 ---
 
@@ -316,6 +342,7 @@ body .dssd-wp .btn-outline { white-space: normal; max-width: 100%; text-align: c
 <p class="back"><a href="/nyu-moi-data/">&larr; Back to the NYU-Moi project page</a></p>
 </div></section>
 </div>
+<script>document.querySelectorAll('.dssd-wp iframe[data-src]').forEach(function(f){if(!f.getAttribute('src')){f.src=f.getAttribute('data-src');}});</script>
 ```
 
 ## File: `02-about-and-leadership.html`
@@ -603,6 +630,7 @@ body .dssd-wp .btn-outline { white-space: normal; max-width: 100%; text-align: c
 <div class="photo-row"><img src="/wp-content/uploads/2026/11/dssd-cop-2.jpg" alt="A participant pointing at a flipchart during a group session" loading="lazy"><img src="/wp-content/uploads/2026/11/dssd-cop-3.jpg" alt="A participant writing on a flipchart during a group session" loading="lazy"></div>
 </div></section>
 </div>
+<script>document.querySelectorAll('.dssd-wp iframe[data-src]').forEach(function(f){if(!f.getAttribute('src')){f.src=f.getAttribute('data-src');}});</script>
 ```
 
 ## File: `10-visiting-trainees.html`
