@@ -270,6 +270,8 @@ body .dssd-wp.dssd-callout .archive-tag { background: #fff; }
 /* The site header sits over the top of each page, so the title band leaves room for it (same as the other title bands) */
 body .dssd-wp .page-title { padding: 121px 0 56px; }
 @media (max-width: 921px) { body .dssd-wp .page-title { padding: 110px 0 44px; } }
+/* Long button text wraps on phones instead of running off the screen */
+body .dssd-wp .btn-outline { white-space: normal; max-width: 100%; text-align: center; }
 ```
 
 ## File: `01-dssd.html`
